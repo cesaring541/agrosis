@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AGROSISModelStoreContainer" CdmEntityContainer="AGROSISEntities">
+    <EntitySetMapping Name="clntes">
+      <EntityTypeMapping TypeName="AGROSISModel.clntes">
+        <MappingFragment StoreEntitySet="clntes">
+          <ScalarProperty Name="tpos_dcmnto_cdgo" ColumnName="tpos_dcmnto_cdgo" />
+          <ScalarProperty Name="clntes_idntfccion" ColumnName="clntes_idntfccion" />
+          <ScalarProperty Name="clntes_rzon_scial" ColumnName="clntes_rzon_scial" />
+          <ScalarProperty Name="clntes_drccion" ColumnName="clntes_drccion" />
+          <ScalarProperty Name="clntes_tlfno" ColumnName="clntes_tlfno" />
+          <ScalarProperty Name="clntes_fax" ColumnName="clntes_fax" />
+          <ScalarProperty Name="clntes_mail" ColumnName="clntes_mail" />
+          <ScalarProperty Name="cddes_cdgo" ColumnName="cddes_cdgo" />
+          <ScalarProperty Name="clntes_cntcto" ColumnName="clntes_cntcto" />
+          <ScalarProperty Name="clntes_tlfno_cntcto" ColumnName="clntes_tlfno_cntcto" />
+          <ScalarProperty Name="clntes_cllar_cntcto" ColumnName="clntes_cllar_cntcto" />
+          <ScalarProperty Name="clntes_mail_cntcto" ColumnName="clntes_mail_cntcto" />
+          <ScalarProperty Name="clntes_actvo" ColumnName="clntes_actvo" />
+          <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+          <ScalarProperty Name="fcha_prcso" ColumnName="fcha_prcso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="clntes_drccnes">
+      <EntityTypeMapping TypeName="AGROSISModel.clntes_drccnes">
+        <MappingFragment StoreEntitySet="clntes_drccnes">
+          <ScalarProperty Name="consecutivo" ColumnName="consecutivo" />
+          <ScalarProperty Name="clntes_idntfccion" ColumnName="clntes_idntfccion" />
+          <ScalarProperty Name="clntes_drccnes_nmbre" ColumnName="clntes_drccnes_nmbre" />
+          <ScalarProperty Name="clntes_drccnes_drccion" ColumnName="clntes_drccnes_drccion" />
+          <ScalarProperty Name="clntes_drccnes_cntcto" ColumnName="clntes_drccnes_cntcto" />
+          <ScalarProperty Name="cddes_cdgo" ColumnName="cddes_cdgo" />
+          <ScalarProperty Name="clntes_drccnes_actvo" ColumnName="clntes_drccnes_actvo" />
+          <ScalarProperty Name="clntes_drccnes_tlfno" ColumnName="clntes_drccnes_tlfno" />
+          <ScalarProperty Name="clntes_drccnes_obsrvcnes" ColumnName="clntes_drccnes_obsrvcnes" />
+          <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+          <ScalarProperty Name="fcha_prcso" ColumnName="fcha_prcso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="det_vles_drccnes">
+      <EntityTypeMapping TypeName="AGROSISModel.det_vles_drccnes">
+        <MappingFragment StoreEntitySet="det_vles_drccnes">
+          <ScalarProperty Name="consecutivo" ColumnName="consecutivo" />
+          <ScalarProperty Name="enc_vles_nmro" ColumnName="enc_vles_nmro" />
+          <ScalarProperty Name="clntes_idntfccion" ColumnName="clntes_idntfccion" />
+          <ScalarProperty Name="clntes_drccnes_nmbre" ColumnName="clntes_drccnes_nmbre" />
+          <ScalarProperty Name="clntes_drccnes_drccion" ColumnName="clntes_drccnes_drccion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="det_vles_prsnas">
+      <EntityTypeMapping TypeName="AGROSISModel.det_vles_prsnas">
+        <MappingFragment StoreEntitySet="det_vles_prsnas">
+          <ScalarProperty Name="consecutivo" ColumnName="consecutivo" />
+          <ScalarProperty Name="enc_vles_nmro" ColumnName="enc_vles_nmro" />
+          <ScalarProperty Name="prsnas_idntfccion" ColumnName="prsnas_idntfccion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="det_vles_srvcios">
+      <EntityTypeMapping TypeName="AGROSISModel.det_vles_srvcios">
+        <MappingFragment StoreEntitySet="det_vles_srvcios">
+          <ScalarProperty Name="consecutivo" ColumnName="consecutivo" />
+          <ScalarProperty Name="enc_vles_nmro" ColumnName="enc_vles_nmro" />
+          <ScalarProperty Name="srvcios_cdgo" ColumnName="srvcios_cdgo" />
+          <ScalarProperty Name="det_vles_hras" ColumnName="det_vles_hras" />
+          <ScalarProperty Name="det_vles_vlor_srvcio" ColumnName="det_vles_vlor_srvcio" />
+          <ScalarProperty Name="bloque" ColumnName="bloque" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="det_vles_vhclos">
+      <EntityTypeMapping TypeName="AGROSISModel.det_vles_vhclos">
+        <MappingFragment StoreEntitySet="det_vles_vhclos">
+          <ScalarProperty Name="consecutivo" ColumnName="consecutivo" />
+          <ScalarProperty Name="enc_vles_nmro" ColumnName="enc_vles_nmro" />
+          <ScalarProperty Name="vhclos_idntfccion" ColumnName="vhclos_idntfccion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="enc_vles">
+      <EntityTypeMapping TypeName="AGROSISModel.enc_vles">
+        <MappingFragment StoreEntitySet="enc_vles">
+          <ScalarProperty Name="enc_vles_nmro" ColumnName="enc_vles_nmro" />
+          <ScalarProperty Name="clntes_idntfccion" ColumnName="clntes_idntfccion" />
+          <ScalarProperty Name="enc_vles_fcha" ColumnName="enc_vles_fcha" />
+          <ScalarProperty Name="enc_vles_hra_entrda" ColumnName="enc_vles_hra_entrda" />
+          <ScalarProperty Name="enc_vles_hra_slda" ColumnName="enc_vles_hra_slda" />
+          <ScalarProperty Name="enc_vles_tmpo_dscnto" ColumnName="enc_vles_tmpo_dscnto" />
+          <ScalarProperty Name="enc_vles_tmpo_trbjdo" ColumnName="enc_vles_tmpo_trbjdo" />
+          <ScalarProperty Name="enc_vles_vlor_trnsprtes" ColumnName="enc_vles_vlor_trnsprtes" />
+          <ScalarProperty Name="enc_vles_vlor_almntos" ColumnName="enc_vles_vlor_almntos" />
+          <ScalarProperty Name="enc_vles_cmbstble" ColumnName="enc_vles_cmbstble" />
+          <ScalarProperty Name="enc_fac_nmro" ColumnName="enc_fac_nmro" />
+          <ScalarProperty Name="enc_vles_rlcion" ColumnName="enc_vles_rlcion" />
+          <ScalarProperty Name="enc_vles_cncldo" ColumnName="enc_vles_cncldo" />
+          <ScalarProperty Name="enc_vles_qncna" ColumnName="enc_vles_qncna" />
+          <ScalarProperty Name="enc_vles_entrgdo" ColumnName="enc_vles_entrgdo" />
+          <ScalarProperty Name="enc_vles_obsrvcnes" ColumnName="enc_vles_obsrvcnes" />
+          <ScalarProperty Name="enc_vles_nmro_intrno" ColumnName="enc_vles_nmro_intrno" />
+          <ScalarProperty Name="enc_vles_fctrdo" ColumnName="enc_vles_fctrdo" />
+          <ScalarProperty Name="enc_vles_pgdo" ColumnName="enc_vles_pgdo" />
+          <ScalarProperty Name="enc_vles_prcsdo" ColumnName="enc_vles_prcsdo" />
+          <ScalarProperty Name="enc_vles_prcsdo_fctra" ColumnName="enc_vles_prcsdo_fctra" />
+          <ScalarProperty Name="enc_vles_prcsdo_pgdo" ColumnName="enc_vles_prcsdo_pgdo" />
+          <ScalarProperty Name="enc_vles_tmpral" ColumnName="enc_vles_tmpral" />
+          <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+          <ScalarProperty Name="fcha_prcso" ColumnName="fcha_prcso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mnnto_vhclos">
+      <EntityTypeMapping TypeName="AGROSISModel.mnnto_vhclos">
+        <MappingFragment StoreEntitySet="mnnto_vhclos">
+          <ScalarProperty Name="vhclos_idntfccion" ColumnName="vhclos_idntfccion" />
+          <ScalarProperty Name="cncptos_mnnto_cdgo" ColumnName="cncptos_mnnto_cdgo" />
+          <ScalarProperty Name="mnnto_nmro_hras" ColumnName="mnnto_nmro_hras" />
+          <ScalarProperty Name="mnnto_nmro_hras_trbjdas" ColumnName="mnnto_nmro_hras_trbjdas" />
+          <ScalarProperty Name="mnnto_vhclos_fcha_incial" ColumnName="mnnto_vhclos_fcha_incial" />
+          <ScalarProperty Name="mnnto_vhclos_fcha_fnal" ColumnName="mnnto_vhclos_fcha_fnal" />
+          <ScalarProperty Name="mnnto_obsrvcnes" ColumnName="mnnto_obsrvcnes" />
+          <ScalarProperty Name="mnnto_actvo" ColumnName="mnnto_actvo" />
+          <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+          <ScalarProperty Name="fcha_prcso" ColumnName="fcha_prcso" />
+          <ScalarProperty Name="consecutivo" ColumnName="consecutivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="prsnas">
+      <EntityTypeMapping TypeName="AGROSISModel.prsnas">
+        <MappingFragment StoreEntitySet="prsnas">
+          <ScalarProperty Name="prsnas_idntfccion" ColumnName="prsnas_idntfccion" />
+          <ScalarProperty Name="cddes_cdgo_expdcion" ColumnName="cddes_cdgo_expdcion" />
+          <ScalarProperty Name="prsnas_prmer_nmbre" ColumnName="prsnas_prmer_nmbre" />
+          <ScalarProperty Name="prsnas_sgndo_nmbre" ColumnName="prsnas_sgndo_nmbre" />
+          <ScalarProperty Name="prsnas_prmer_aplldo" ColumnName="prsnas_prmer_aplldo" />
+          <ScalarProperty Name="prsnas_sgndo_aplldo" ColumnName="prsnas_sgndo_aplldo" />
+          <ScalarProperty Name="prsnas_lgar_ncmnto" ColumnName="prsnas_lgar_ncmnto" />
+          <ScalarProperty Name="prsnas_fcha_ncmnto" ColumnName="prsnas_fcha_ncmnto" />
+          <ScalarProperty Name="tpos_sngre_cdgo" ColumnName="tpos_sngre_cdgo" />
+          <ScalarProperty Name="prsnas_actvo" ColumnName="prsnas_actvo" />
+          <ScalarProperty Name="prsnas_nmbre_cmplto" ColumnName="prsnas_nmbre_cmplto" />
+          <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+          <ScalarProperty Name="fcha_prcso" ColumnName="fcha_prcso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="AGROSISModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cntros">
+      <EntityTypeMapping TypeName="AGROSISModel.cntros">
+        <MappingFragment StoreEntitySet="cntros">
+          <ScalarProperty Name="tpos_dcmnto_cdgo" ColumnName="tpos_dcmnto_cdgo" />
+          <ScalarProperty Name="cntros_cdgo" ColumnName="cntros_cdgo" />
+          <ScalarProperty Name="cntros_rzon_scial" ColumnName="cntros_rzon_scial" />
+          <ScalarProperty Name="cddes_cdgo" ColumnName="cddes_cdgo" />
+          <ScalarProperty Name="cntros_scrsal" ColumnName="cntros_scrsal" />
+          <ScalarProperty Name="cntros_drccion" ColumnName="cntros_drccion" />
+          <ScalarProperty Name="cntros_tlfno" ColumnName="cntros_tlfno" />
+          <ScalarProperty Name="cntros_mail" ColumnName="cntros_mail" />
+          <ScalarProperty Name="cntros_actvo" ColumnName="cntros_actvo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="enc_vles_bck">
+      <EntityTypeMapping TypeName="AGROSISModel.enc_vles_bck">
+        <MappingFragment StoreEntitySet="enc_vles_bck">
+          <ScalarProperty Name="id_vale" ColumnName="id_vale" />
+          <ScalarProperty Name="enc_vles_nmro" ColumnName="enc_vles_nmro" />
+          <ScalarProperty Name="clntes_idntfccion" ColumnName="clntes_idntfccion" />
+          <ScalarProperty Name="enc_vles_fcha" ColumnName="enc_vles_fcha" />
+          <ScalarProperty Name="enc_vles_hra_entrda" ColumnName="enc_vles_hra_entrda" />
+          <ScalarProperty Name="enc_vles_hra_slda" ColumnName="enc_vles_hra_slda" />
+          <ScalarProperty Name="enc_vles_tmpo_dscnto" ColumnName="enc_vles_tmpo_dscnto" />
+          <ScalarProperty Name="enc_vles_tmpo_trbjdo" ColumnName="enc_vles_tmpo_trbjdo" />
+          <ScalarProperty Name="enc_vles_vlor_trnsprtes" ColumnName="enc_vles_vlor_trnsprtes" />
+          <ScalarProperty Name="enc_vles_vlor_almntos" ColumnName="enc_vles_vlor_almntos" />
+          <ScalarProperty Name="enc_vles_cmbstble" ColumnName="enc_vles_cmbstble" />
+          <ScalarProperty Name="enc_fac_nmro" ColumnName="enc_fac_nmro" />
+          <ScalarProperty Name="enc_vles_rlcion" ColumnName="enc_vles_rlcion" />
+          <ScalarProperty Name="enc_vles_cncldo" ColumnName="enc_vles_cncldo" />
+          <ScalarProperty Name="enc_vles_qncna" ColumnName="enc_vles_qncna" />
+          <ScalarProperty Name="enc_vles_entrgdo" ColumnName="enc_vles_entrgdo" />
+          <ScalarProperty Name="enc_vles_obsrvcnes" ColumnName="enc_vles_obsrvcnes" />
+          <ScalarProperty Name="enc_vles_nmro_intrno" ColumnName="enc_vles_nmro_intrno" />
+          <ScalarProperty Name="enc_vles_fctrdo" ColumnName="enc_vles_fctrdo" />
+          <ScalarProperty Name="enc_vles_pgdo" ColumnName="enc_vles_pgdo" />
+          <ScalarProperty Name="enc_vles_prcsdo" ColumnName="enc_vles_prcsdo" />
+          <ScalarProperty Name="enc_vles_prcsdo_fctra" ColumnName="enc_vles_prcsdo_fctra" />
+          <ScalarProperty Name="enc_vles_prcsdo_pgdo" ColumnName="enc_vles_prcsdo_pgdo" />
+          <ScalarProperty Name="enc_vles_tmpral" ColumnName="enc_vles_tmpral" />
+          <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+          <ScalarProperty Name="fcha_prcso" ColumnName="fcha_prcso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lstas_prcio">
+      <EntityTypeMapping TypeName="AGROSISModel.lstas_prcio">
+        <MappingFragment StoreEntitySet="lstas_prcio">
+          <ScalarProperty Name="cnvnios_cdgo" ColumnName="cnvnios_cdgo" />
+          <ScalarProperty Name="srvcios_cdgo" ColumnName="srvcios_cdgo" />
+          <ScalarProperty Name="lstas_prcio_vlor" ColumnName="lstas_prcio_vlor" />
+          <ScalarProperty Name="lstas_prcio_iva" ColumnName="lstas_prcio_iva" />
+          <ScalarProperty Name="lstas_prcio_prdo" ColumnName="lstas_prcio_prdo" />
+          <ScalarProperty Name="lstas_prcio_actvo" ColumnName="lstas_prcio_actvo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mvmnto_vhclos">
+      <EntityTypeMapping TypeName="AGROSISModel.mvmnto_vhclos">
+        <MappingFragment StoreEntitySet="mvmnto_vhclos">
+          <ScalarProperty Name="vhclos_idntfccion" ColumnName="vhclos_idntfccion" />
+          <ScalarProperty Name="cncptos_mvmnto_cdgo" ColumnName="cncptos_mvmnto_cdgo" />
+          <ScalarProperty Name="mvmnto_vhclos_fcha" ColumnName="mvmnto_vhclos_fcha" />
+          <ScalarProperty Name="mvmnto_vhclos_dcmnto" ColumnName="mvmnto_vhclos_dcmnto" />
+          <ScalarProperty Name="mvmnto_vhclos_vlor" ColumnName="mvmnto_vhclos_vlor" />
+          <ScalarProperty Name="mvmnto_vhclos_obsrvcnes" ColumnName="mvmnto_vhclos_obsrvcnes" />
+          <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+          <ScalarProperty Name="fcha_prcso" ColumnName="fcha_prcso" />
+          <ScalarProperty Name="consecutivo" ColumnName="consecutivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="prfles_usrio">
+      <EntityTypeMapping TypeName="AGROSISModel.prfles_usrio">
+        <MappingFragment StoreEntitySet="prfles_usrio">
+          <ScalarProperty Name="prfles_usrio_cdgo" ColumnName="prfles_usrio_cdgo" />
+          <ScalarProperty Name="prfles_usrio_dscrpcion" ColumnName="prfles_usrio_dscrpcion" />
+          <ScalarProperty Name="prfles_usrio_actvo" ColumnName="prfles_usrio_actvo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="prsnas_drccnes">
+      <EntityTypeMapping TypeName="AGROSISModel.prsnas_drccnes">
+        <MappingFragment StoreEntitySet="prsnas_drccnes">
+          <ScalarProperty Name="prsnas_idntfccion" ColumnName="prsnas_idntfccion" />
+          <ScalarProperty Name="prsnas_drccnes_drccion" ColumnName="prsnas_drccnes_drccion" />
+          <ScalarProperty Name="cddes_cdgo" ColumnName="cddes_cdgo" />
+          <ScalarProperty Name="prsnas_drccnes_actvo" ColumnName="prsnas_drccnes_actvo" />
+          <ScalarProperty Name="prsnas_drccnes_tlfno" ColumnName="prsnas_drccnes_tlfno" />
+          <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+          <ScalarProperty Name="fcha_prcso" ColumnName="fcha_prcso" />
+          <ScalarProperty Name="consecutivo" ColumnName="consecutivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="prsnas_eps">
+      <EntityTypeMapping TypeName="AGROSISModel.prsnas_eps">
+        <MappingFragment StoreEntitySet="prsnas_eps">
+          <ScalarProperty Name="prsnas_idntfccion" ColumnName="prsnas_idntfccion" />
+          <ScalarProperty Name="eps_cdgo" ColumnName="eps_cdgo" />
+          <ScalarProperty Name="fcha_aflcion" ColumnName="fcha_aflcion" />
+          <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+          <ScalarProperty Name="fcha_prcso" ColumnName="fcha_prcso" />
+          <ScalarProperty Name="consecutivo" ColumnName="consecutivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="prsnas_fndos_pnsnes">
+      <EntityTypeMapping TypeName="AGROSISModel.prsnas_fndos_pnsnes">
+        <MappingFragment StoreEntitySet="prsnas_fndos_pnsnes">
+          <ScalarProperty Name="prsnas_idntfccion" ColumnName="prsnas_idntfccion" />
+          <ScalarProperty Name="fndos_pnsnes_cdgo" ColumnName="fndos_pnsnes_cdgo" />
+          <ScalarProperty Name="fcha_aflcion" ColumnName="fcha_aflcion" />
+          <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+          <ScalarProperty Name="fcha_prcso" ColumnName="fcha_prcso" />
+          <ScalarProperty Name="consecutivo" ColumnName="consecutivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="prsnas_obsrvcnes">
+      <EntityTypeMapping TypeName="AGROSISModel.prsnas_obsrvcnes">
+        <MappingFragment StoreEntitySet="prsnas_obsrvcnes">
+          <ScalarProperty Name="prsnas_idntfccion" ColumnName="prsnas_idntfccion" />
+          <ScalarProperty Name="prsnas_obsrvcnes1" ColumnName="prsnas_obsrvcnes" />
+          <ScalarProperty Name="fcha_obsrvcion" ColumnName="fcha_obsrvcion" />
+          <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+          <ScalarProperty Name="fcha_prcso" ColumnName="fcha_prcso" />
+          <ScalarProperty Name="consecutivo" ColumnName="consecutivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="prsnas_tlfnos">
+      <EntityTypeMapping TypeName="AGROSISModel.prsnas_tlfnos">
+        <MappingFragment StoreEntitySet="prsnas_tlfnos">
+          <ScalarProperty Name="prsnas_idntfccion" ColumnName="prsnas_idntfccion" />
+          <ScalarProperty Name="prsnas_tlfnos_tlfno" ColumnName="prsnas_tlfnos_tlfno" />
+          <ScalarProperty Name="cddes_cdgo" ColumnName="cddes_cdgo" />
+          <ScalarProperty Name="prsnas_tlfnos_actvo" ColumnName="prsnas_tlfnos_actvo" />
+          <ScalarProperty Name="prsnas_tlfnos_obsrvcion" ColumnName="prsnas_tlfnos_obsrvcion" />
+          <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+          <ScalarProperty Name="fcha_prcso" ColumnName="fcha_prcso" />
+          <ScalarProperty Name="consecutivo" ColumnName="consecutivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usrios">
+      <EntityTypeMapping TypeName="AGROSISModel.usrios">
+        <MappingFragment StoreEntitySet="usrios">
+          <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+          <ScalarProperty Name="usrios_dscrpcion" ColumnName="usrios_dscrpcion" />
+          <ScalarProperty Name="usrios_clve" ColumnName="usrios_clve" />
+          <ScalarProperty Name="usrios_actvo" ColumnName="usrios_actvo" />
+          <ScalarProperty Name="usrios_admnstrdor" ColumnName="usrios_admnstrdor" />
+          <ScalarProperty Name="usrios_frma_dgtal" ColumnName="usrios_frma_dgtal" />
+          <ScalarProperty Name="prfles_usrio_cdgo" ColumnName="prfles_usrio_cdgo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usrios_clves">
+      <EntityTypeMapping TypeName="AGROSISModel.usrios_clves">
+        <MappingFragment StoreEntitySet="usrios_clves">
+          <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+          <ScalarProperty Name="usrios_clve" ColumnName="usrios_clve" />
+          <ScalarProperty Name="usrios_fcha_clve" ColumnName="usrios_fcha_clve" />
+          <ScalarProperty Name="usrios_fcha_prcso" ColumnName="usrios_fcha_prcso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,1549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="AGROSISModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.au_prmtros_gnrles' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="au_prmtros_gnrles">
+          <Property Name="cntros_cdgo" Type="nvarchar" MaxLength="20" />
+          <Property Name="pg_fctra_incial" Type="float" />
+          <Property Name="pg_fctra_fnal" Type="float" />
+          <Property Name="pg_nmro_rslcion" Type="nvarchar" MaxLength="50" />
+          <Property Name="pg_fcha_rslcion" Type="datetime" />
+          <Property Name="pg_vgncia_clve" Type="int" />
+          <Property Name="cddes_cdgo" Type="nvarchar" MaxLength="5" />
+          <Property Name="pg_rta_rprtes" Type="nvarchar" MaxLength="100" />
+          <Property Name="pg_rta_ftos" Type="nvarchar" MaxLength="100" />
+          <Property Name="pg_rta_dcmntcion" Type="nvarchar" MaxLength="100" />
+          <Property Name="pg_frmto_fcha" Type="char" MaxLength="19" />
+          <Property Name="pg_rta_backup" Type="char" MaxLength="100" />
+          <Property Name="pg_rta_rspldo" Type="char" MaxLength="100" />
+          <Property Name="pg_cnctdo" Type="char" MaxLength="1" />
+          <Property Name="srvdor" Type="char" MaxLength="20" />
+          <Property Name="cncptos_pgo_cdgo" Type="char" MaxLength="3" />
+          <Property Name="pg_db" Type="char" MaxLength="20" />
+          <Property Name="srvdor_mail" Type="char" MaxLength="50" />
+          <Property Name="rmtnte_mail" Type="char" MaxLength="50" />
+          <Property Name="asnto_mail" Type="char" MaxLength="100" />
+          <Property Name="crpo_mail" Type="char" MaxLength="100" />
+          <Property Name="usrio_mail" Type="char" MaxLength="50" />
+          <Property Name="clve_mail" Type="char" MaxLength="50" />
+          <Property Name="hra_avso_mail" Type="char" MaxLength="5" />
+          <Property Name="cnta_mail_uno" Type="char" MaxLength="50" />
+          <Property Name="cnta_mail_dos" Type="char" MaxLength="50" />
+          <Property Name="pg_vlor_hra" Type="decimal" Precision="6" Scale="2" />
+          <Property Name="prcntje_trnsprte" Type="decimal" Precision="4" Scale="2" />
+          <Property Name="cncptos_pgo_trnsprte" Type="char" MaxLength="3" />
+          <Property Name="cncptos_hra_dscnto" Type="char" MaxLength="3" />
+          <Property Name="usrios_cdgo" Type="char" MaxLength="20" />
+          <Property Name="fcha_prcso" Type="datetime" />
+        </EntityType>-->
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.basura' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="basura">
+          <Property Name="cntros_cdgo" Type="nvarchar" MaxLength="20" />
+          <Property Name="pg_fctra_incial" Type="float" />
+          <Property Name="pg_fctra_fnal" Type="float" />
+          <Property Name="pg_nmro_rslcion" Type="nvarchar" MaxLength="50" />
+          <Property Name="pg_fcha_rslcion" Type="datetime" />
+          <Property Name="pg_vgncia_clve" Type="int" />
+          <Property Name="cddes_cdgo" Type="nvarchar" MaxLength="5" />
+          <Property Name="pg_rta_rprtes" Type="nvarchar" MaxLength="100" />
+          <Property Name="pg_rta_ftos" Type="nvarchar" MaxLength="100" />
+          <Property Name="pg_rta_dcmntcion" Type="nvarchar" MaxLength="100" />
+          <Property Name="pg_frmto_fcha" Type="char" MaxLength="19" />
+          <Property Name="pg_rta_backup" Type="char" MaxLength="100" />
+          <Property Name="pg_rta_rspldo" Type="char" MaxLength="100" />
+          <Property Name="pg_cnctdo" Type="char" MaxLength="1" />
+          <Property Name="srvdor" Type="char" MaxLength="20" />
+          <Property Name="cncptos_pgo_cdgo" Type="char" MaxLength="3" />
+          <Property Name="pg_db" Type="char" MaxLength="20" />
+          <Property Name="srvdor_mail" Type="char" MaxLength="50" />
+          <Property Name="rmtnte_mail" Type="char" MaxLength="50" />
+          <Property Name="asnto_mail" Type="char" MaxLength="100" />
+          <Property Name="crpo_mail" Type="char" MaxLength="100" />
+          <Property Name="usrio_mail" Type="char" MaxLength="50" />
+          <Property Name="clve_mail" Type="char" MaxLength="50" />
+          <Property Name="hra_avso_mail" Type="char" MaxLength="5" />
+          <Property Name="cnta_mail_uno" Type="char" MaxLength="50" />
+          <Property Name="cnta_mail_dos" Type="char" MaxLength="50" />
+          <Property Name="pg_vlor_hra" Type="decimal" Precision="6" Scale="2" />
+          <Property Name="prcntje_trnsprte" Type="decimal" Precision="4" Scale="2" />
+          <Property Name="cncptos_pgo_trnsprte" Type="char" MaxLength="3" />
+        </EntityType>-->
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.bloques' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="bloques">
+          <Property Name="nombre" Type="nvarchar" MaxLength="50" />
+          <Property Name="activo" Type="char" MaxLength="1" />
+        </EntityType>-->
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.cddes' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="cddes">
+          <Property Name="cddes_cdgo" Type="char" MaxLength="5" />
+          <Property Name="cddes_dscrpcion" Type="varchar" MaxLength="50" />
+          <Property Name="cddes_actvo" Type="char" MaxLength="1" />
+        </EntityType>-->
+        <EntityType Name="clntes">
+          <Key>
+            <PropertyRef Name="clntes_idntfccion" />
+          </Key>
+          <Property Name="tpos_dcmnto_cdgo" Type="varchar" MaxLength="3" />
+          <Property Name="clntes_idntfccion" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="clntes_rzon_scial" Type="varchar" MaxLength="200" />
+          <Property Name="clntes_drccion" Type="varchar" MaxLength="200" />
+          <Property Name="clntes_tlfno" Type="varchar" MaxLength="50" />
+          <Property Name="clntes_fax" Type="varchar" MaxLength="50" />
+          <Property Name="clntes_mail" Type="varchar" MaxLength="100" />
+          <Property Name="cddes_cdgo" Type="varchar" MaxLength="5" />
+          <Property Name="clntes_cntcto" Type="varchar" MaxLength="200" />
+          <Property Name="clntes_tlfno_cntcto" Type="varchar" MaxLength="50" />
+          <Property Name="clntes_cllar_cntcto" Type="varchar" MaxLength="50" />
+          <Property Name="clntes_mail_cntcto" Type="varchar" MaxLength="100" />
+          <Property Name="clntes_actvo" Type="char" MaxLength="1" />
+          <Property Name="usrios_cdgo" Type="varchar" MaxLength="50" />
+          <Property Name="fcha_prcso" Type="datetime" />
+        </EntityType>
+        <EntityType Name="clntes_drccnes">
+          <Key>
+            <PropertyRef Name="consecutivo" />
+          </Key>
+          <Property Name="consecutivo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="clntes_idntfccion" Type="varchar" MaxLength="20" />
+          <Property Name="clntes_drccnes_nmbre" Type="varchar" MaxLength="200" />
+          <Property Name="clntes_drccnes_drccion" Type="varchar" MaxLength="200" />
+          <Property Name="clntes_drccnes_cntcto" Type="varchar" MaxLength="200" />
+          <Property Name="cddes_cdgo" Type="varchar" MaxLength="5" />
+          <Property Name="clntes_drccnes_actvo" Type="char" MaxLength="1" />
+          <Property Name="clntes_drccnes_tlfno" Type="varchar" MaxLength="100" />
+          <Property Name="clntes_drccnes_obsrvcnes" Type="varchar" MaxLength="1000" />
+          <Property Name="usrios_cdgo" Type="varchar" MaxLength="20" />
+          <Property Name="fcha_prcso" Type="datetime" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.clses_vhclos' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="clses_vhclos">
+          <Property Name="clses_vhclos_cdgo" Type="varchar" MaxLength="3" />
+          <Property Name="clses_vhclos_dscrpcion" Type="varchar" MaxLength="100" />
+          <Property Name="clses_vhclos_actvo" Type="char" MaxLength="1" />
+        </EntityType>-->
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.cncptos_dscnto' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="cncptos_dscnto">
+          <Property Name="cncptos_dscnto_cdgo" Type="varchar" MaxLength="3" />
+          <Property Name="cncptos_dscnto_dscrpcion" Type="varchar" MaxLength="50" />
+          <Property Name="cncptos_dscnto_actvo" Type="char" MaxLength="1" />
+        </EntityType>-->
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.cncptos_mnnto' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="cncptos_mnnto">
+          <Property Name="cncptos_mnnto_cdgo" Type="varchar" MaxLength="3" />
+          <Property Name="cncptos_mnnto_dscrpcion" Type="varchar" MaxLength="100" />
+          <Property Name="cncptos_mnnto_actvo" Type="char" MaxLength="1" />
+        </EntityType>-->
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.cncptos_mvmnto' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="cncptos_mvmnto">
+          <Property Name="cncptos_mvmnto_cdgo" Type="varchar" MaxLength="3" />
+          <Property Name="cncptos_mvmnto_dscrpcion" Type="varchar" MaxLength="100" />
+          <Property Name="cncptos_mvmnto_actvo" Type="char" MaxLength="1" />
+        </EntityType>-->
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.cncptos_pgo' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="cncptos_pgo">
+          <Property Name="cncptos_pgo_cdgo" Type="varchar" MaxLength="3" />
+          <Property Name="cncptos_pgo_dscrpcion" Type="varchar" MaxLength="50" />
+          <Property Name="cncptos_pgo_actvo" Type="char" MaxLength="1" />
+        </EntityType>-->
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.cnsctvos' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="cnsctvos">
+          <Property Name="cnsctvos_fctrcion" Type="int" />
+          <Property Name="cnsctvos_cja" Type="int" />
+          <Property Name="cnsctvos_vles" Type="int" />
+          <Property Name="cnsctvos_pgos" Type="int" />
+          <Property Name="cnsctvos_tmprles" Type="int" />
+          <Property Name="cnsctvos_prfjo_fctrcion" Type="nvarchar" MaxLength="20" />
+          <Property Name="cnsctvos_prfjo_cja" Type="nvarchar" MaxLength="20" />
+          <Property Name="cnsctvos_prfjo_vles" Type="nvarchar" MaxLength="20" />
+          <Property Name="cnsctvos_prfjo_pgos" Type="nvarchar" MaxLength="20" />
+          <Property Name="cnsctvos_prfjo_tmprles" Type="nvarchar" MaxLength="20" />
+        </EntityType>-->
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'AGROSIS.dbo.cntros' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="cntros">
+          <Key>
+            <PropertyRef Name="cntros_cdgo" />
+          </Key>
+          <Property Name="tpos_dcmnto_cdgo" Type="nvarchar" MaxLength="1" />
+          <Property Name="cntros_cdgo" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="cntros_rzon_scial" Type="nvarchar" MaxLength="100" />
+          <Property Name="cddes_cdgo" Type="nvarchar" MaxLength="5" />
+          <Property Name="cntros_scrsal" Type="nvarchar" MaxLength="50" />
+          <Property Name="cntros_drccion" Type="nvarchar" MaxLength="50" />
+          <Property Name="cntros_tlfno" Type="nvarchar" MaxLength="20" />
+          <Property Name="cntros_mail" Type="nvarchar" MaxLength="50" />
+          <Property Name="cntros_actvo" Type="nvarchar" MaxLength="1" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.CREXPORT' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="CREXPORT">
+          <Property Name="PH_1" Type="varchar" MaxLength="17" />
+          <Property Name="PH_PrintDate" Type="datetime" />
+          <Property Name="PH_PrintTime" Type="datetime" />
+          <Property Name="PH_4" Type="varchar" MaxLength="4" />
+          <Property Name="PH_5" Type="varchar" MaxLength="5" />
+          <Property Name="PH_6" Type="varchar" MaxLength="7" />
+          <Property Name="PH_7" Type="varchar" MaxLength="13" />
+          <Property Name="PH_8" Type="varchar" MaxLength="8" />
+          <Property Name="PH_9" Type="varchar" MaxLength="5" />
+          <Property Name="PH_10" Type="varchar" MaxLength="9" />
+          <Property Name="PH_11" Type="varchar" MaxLength="8" />
+          <Property Name="PH_12" Type="varchar" MaxLength="10" />
+          <Property Name="PH_13" Type="varchar" MaxLength="11" />
+          <Property Name="DE_enc_vles_nmro_intrno" Type="varchar" MaxLength="21" />
+          <Property Name="DE_2" Type="varchar" MaxLength="13" />
+          <Property Name="DE_3" Type="varchar" MaxLength="17" />
+          <Property Name="DE_4" Type="varchar" MaxLength="20" />
+          <Property Name="DE_srvcios_dscrpcion" Type="varchar" MaxLength="101" />
+          <Property Name="DE_det_vles_hras" Type="float" />
+          <Property Name="DE_7" Type="varchar" MaxLength="17" />
+          <Property Name="DE_8" Type="varchar" MaxLength="19" />
+          <Property Name="DE_enc_vles_vlor_trnsprtes" Type="float" />
+          <Property Name="DE_enc_vles_vlor_almntos" Type="float" />
+        </EntityType>-->
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.cstos_srvcio' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="cstos_srvcio">
+          <Property Name="cnvnios_cdgo" Type="varchar" MaxLength="20" />
+          <Property Name="srvcios_cdgo" Type="varchar" MaxLength="3" />
+          <Property Name="vlor_pgdo_srvcio" Type="float" />
+        </EntityType>-->
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.det_pgos' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="det_pgos">
+          <Property Name="enc_pgos_nmro" Type="int" />
+          <Property Name="cncptos_cdgo" Type="varchar" MaxLength="3" />
+          <Property Name="cncptos_tpo" Type="varchar" MaxLength="3" />
+          <Property Name="vlor_pgo" Type="decimal" Precision="16" Scale="2" />
+        </EntityType>-->
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.det_pgos_vles' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="det_pgos_vles">
+          <Property Name="enc_pgos_nmro" Type="int" />
+          <Property Name="enc_vles_nmro" Type="int" />
+        </EntityType>-->
+        <EntityType Name="det_vles_drccnes">
+          <Key>
+            <PropertyRef Name="consecutivo" />
+          </Key>
+          <Property Name="consecutivo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="enc_vles_nmro" Type="int" />
+          <Property Name="clntes_idntfccion" Type="varchar" MaxLength="20" />
+          <Property Name="clntes_drccnes_nmbre" Type="varchar" MaxLength="200" />
+          <Property Name="clntes_drccnes_drccion" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="det_vles_prsnas">
+          <Key>
+            <PropertyRef Name="consecutivo" />
+          </Key>
+          <Property Name="consecutivo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="enc_vles_nmro" Type="int" />
+          <Property Name="prsnas_idntfccion" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="det_vles_srvcios">
+          <Key>
+            <PropertyRef Name="consecutivo" />
+          </Key>
+          <Property Name="consecutivo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="enc_vles_nmro" Type="int" />
+          <Property Name="srvcios_cdgo" Type="varchar" MaxLength="3" />
+          <Property Name="det_vles_hras" Type="decimal" Precision="4" Scale="2" />
+          <Property Name="det_vles_vlor_srvcio" Type="decimal" Precision="16" Scale="2" />
+          <Property Name="bloque" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="det_vles_vhclos">
+          <Key>
+            <PropertyRef Name="consecutivo" />
+          </Key>
+          <Property Name="consecutivo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="enc_vles_nmro" Type="int" />
+          <Property Name="vhclos_idntfccion" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.enc_pgos' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="enc_pgos">
+          <Property Name="enc_pgos_nmro" Type="int" />
+          <Property Name="enc_pgos_fcha" Type="datetime" />
+          <Property Name="vlor_pgos" Type="decimal" Precision="16" Scale="2" />
+          <Property Name="vlor_dscntos" Type="decimal" Precision="16" Scale="2" />
+          <Property Name="vlor_ttal_pgdo" Type="decimal" Precision="16" Scale="2" />
+          <Property Name="enc_pgos_fcha_qncna" Type="datetime" />
+          <Property Name="usrios_cdgo" Type="varchar" MaxLength="20" />
+          <Property Name="fcha_prcso" Type="datetime" />
+        </EntityType>-->
+        <EntityType Name="enc_vles">
+          <Key>
+            <PropertyRef Name="enc_vles_nmro" />
+          </Key>
+          <Property Name="enc_vles_nmro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="clntes_idntfccion" Type="varchar" MaxLength="20" />
+          <Property Name="enc_vles_fcha" Type="datetime" />
+          <Property Name="enc_vles_hra_entrda" Type="varchar" MaxLength="10" />
+          <Property Name="enc_vles_hra_slda" Type="varchar" MaxLength="10" />
+          <Property Name="enc_vles_tmpo_dscnto" Type="decimal" Precision="4" Scale="2" />
+          <Property Name="enc_vles_tmpo_trbjdo" Type="decimal" Precision="4" Scale="2" />
+          <Property Name="enc_vles_vlor_trnsprtes" Type="decimal" Precision="8" Scale="2" />
+          <Property Name="enc_vles_vlor_almntos" Type="decimal" Precision="8" Scale="2" />
+          <Property Name="enc_vles_cmbstble" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="enc_fac_nmro" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="enc_vles_rlcion" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="enc_vles_cncldo" Type="char" MaxLength="1" />
+          <Property Name="enc_vles_qncna" Type="varchar" MaxLength="20" />
+          <Property Name="enc_vles_entrgdo" Type="char" MaxLength="1" />
+          <Property Name="enc_vles_obsrvcnes" Type="varchar" MaxLength="1000" />
+          <Property Name="enc_vles_nmro_intrno" Type="varchar" MaxLength="20" />
+          <Property Name="enc_vles_fctrdo" Type="char" MaxLength="1" />
+          <Property Name="enc_vles_pgdo" Type="char" MaxLength="1" />
+          <Property Name="enc_vles_prcsdo" Type="char" MaxLength="1" />
+          <Property Name="enc_vles_prcsdo_fctra" Type="char" MaxLength="1" />
+          <Property Name="enc_vles_prcsdo_pgdo" Type="char" MaxLength="1" />
+          <Property Name="enc_vles_tmpral" Type="char" MaxLength="1" />
+          <Property Name="usrios_cdgo" Type="varchar" MaxLength="20" />
+          <Property Name="fcha_prcso" Type="datetime" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'AGROSIS.dbo.enc_vles_bck' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="enc_vles_bck">
+          <Key>
+            <PropertyRef Name="id_vale" />
+            <PropertyRef Name="enc_vles_nmro" />
+            <PropertyRef Name="enc_fac_nmro" />
+            <PropertyRef Name="enc_vles_rlcion" />
+          </Key>
+          <Property Name="id_vale" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="enc_vles_nmro" Type="int" Nullable="false" />
+          <Property Name="clntes_idntfccion" Type="varchar" MaxLength="20" />
+          <Property Name="enc_vles_fcha" Type="datetime" />
+          <Property Name="enc_vles_hra_entrda" Type="varchar" MaxLength="10" />
+          <Property Name="enc_vles_hra_slda" Type="varchar" MaxLength="10" />
+          <Property Name="enc_vles_tmpo_dscnto" Type="decimal" Precision="4" Scale="2" />
+          <Property Name="enc_vles_tmpo_trbjdo" Type="decimal" Precision="4" Scale="2" />
+          <Property Name="enc_vles_vlor_trnsprtes" Type="decimal" Precision="8" Scale="2" />
+          <Property Name="enc_vles_vlor_almntos" Type="decimal" Precision="8" Scale="2" />
+          <Property Name="enc_vles_cmbstble" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="enc_fac_nmro" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="enc_vles_rlcion" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="enc_vles_cncldo" Type="char" MaxLength="1" />
+          <Property Name="enc_vles_qncna" Type="datetime" />
+          <Property Name="enc_vles_entrgdo" Type="char" MaxLength="1" />
+          <Property Name="enc_vles_obsrvcnes" Type="varchar" MaxLength="1000" />
+          <Property Name="enc_vles_nmro_intrno" Type="varchar" MaxLength="20" />
+          <Property Name="enc_vles_fctrdo" Type="char" MaxLength="1" />
+          <Property Name="enc_vles_pgdo" Type="char" MaxLength="1" />
+          <Property Name="enc_vles_prcsdo" Type="char" MaxLength="1" />
+          <Property Name="enc_vles_prcsdo_fctra" Type="char" MaxLength="1" />
+          <Property Name="enc_vles_prcsdo_pgdo" Type="char" MaxLength="1" />
+          <Property Name="enc_vles_tmpral" Type="char" MaxLength="1" />
+          <Property Name="usrios_cdgo" Type="varchar" MaxLength="20" />
+          <Property Name="fcha_prcso" Type="datetime" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.eps' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="eps">
+          <Property Name="eps_cdgo" Type="varchar" MaxLength="3" />
+          <Property Name="eps_dscrpcion" Type="varchar" MaxLength="100" />
+          <Property Name="eps_actvo" Type="char" MaxLength="1" />
+        </EntityType>-->
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.estdos_cvles' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="estdos_cvles">
+          <Property Name="estdos_cvles_cdgo" Type="varchar" MaxLength="3" />
+          <Property Name="estdos_cvles_dscrpcion" Type="varchar" MaxLength="50" />
+          <Property Name="estdos_cvles_actvo" Type="char" MaxLength="1" />
+        </EntityType>-->
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.fndos_pnsnes' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="fndos_pnsnes">
+          <Property Name="fndos_pnsnes_cdgo" Type="varchar" MaxLength="3" />
+          <Property Name="fndos_pnsnes_dscrpcion" Type="varchar" MaxLength="100" />
+          <Property Name="fndos_pnsnes_actvo" Type="char" MaxLength="1" />
+        </EntityType>-->
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.grpos_sngneos' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="grpos_sngneos">
+          <Property Name="grpos_sngneos_cdgo" Type="varchar" MaxLength="3" />
+          <Property Name="grpos_sngneos_dscrpcion" Type="varchar" MaxLength="100" />
+          <Property Name="grpos_sngneos_actvo" Type="char" MaxLength="3" />
+        </EntityType>-->
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.hrrio' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="hrrio">
+          <Property Name="hra" Type="varchar" MaxLength="12" />
+          <Property Name="hra_incio" Type="varchar" MaxLength="12" />
+          <Property Name="nivel" Type="int" />
+        </EntityType>-->
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.lneas_vhclos' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="lneas_vhclos">
+          <Property Name="lneas_vhclos_cdgo" Type="varchar" MaxLength="3" />
+          <Property Name="lneas_vhclos_dscrpcion" Type="varchar" MaxLength="100" />
+          <Property Name="lneas_vhclos_actvo" Type="char" MaxLength="1" />
+        </EntityType>-->
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'AGROSIS.dbo.lstas_prcio' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="lstas_prcio">
+          <Key>
+            <PropertyRef Name="cnvnios_cdgo" />
+            <PropertyRef Name="srvcios_cdgo" />
+          </Key>
+          <Property Name="cnvnios_cdgo" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="srvcios_cdgo" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="lstas_prcio_vlor" Type="float" />
+          <Property Name="lstas_prcio_iva" Type="float" />
+          <Property Name="lstas_prcio_prdo" Type="int" />
+          <Property Name="lstas_prcio_actvo" Type="char" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="mnnto_vhclos">
+          <Key>
+            <PropertyRef Name="consecutivo" />
+          </Key>
+          <Property Name="vhclos_idntfccion" Type="varchar" MaxLength="20" />
+          <Property Name="cncptos_mnnto_cdgo" Type="varchar" MaxLength="3" />
+          <Property Name="mnnto_nmro_hras" Type="decimal" Precision="16" Scale="2" />
+          <Property Name="mnnto_nmro_hras_trbjdas" Type="decimal" Precision="16" Scale="2" />
+          <Property Name="mnnto_vhclos_fcha_incial" Type="datetime" />
+          <Property Name="mnnto_vhclos_fcha_fnal" Type="datetime" />
+          <Property Name="mnnto_obsrvcnes" Type="varchar" MaxLength="500" />
+          <Property Name="mnnto_actvo" Type="char" MaxLength="1" />
+          <Property Name="usrios_cdgo" Type="varchar" MaxLength="20" />
+          <Property Name="fcha_prcso" Type="datetime" />
+          <Property Name="consecutivo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.mrcas' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="mrcas">
+          <Property Name="mrcas_cdgo" Type="varchar" MaxLength="3" />
+          <Property Name="mrcas_dscrpcion" Type="varchar" MaxLength="50" />
+          <Property Name="mrcas_actvo" Type="char" MaxLength="1" />
+        </EntityType>-->
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'AGROSIS.dbo.mvmnto_vhclos' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="mvmnto_vhclos">
+          <Key>
+            <PropertyRef Name="consecutivo" />
+          </Key>
+          <Property Name="vhclos_idntfccion" Type="varchar" MaxLength="20" />
+          <Property Name="cncptos_mvmnto_cdgo" Type="varchar" MaxLength="3" />
+          <Property Name="mvmnto_vhclos_fcha" Type="datetime" />
+          <Property Name="mvmnto_vhclos_dcmnto" Type="varchar" MaxLength="20" />
+          <Property Name="mvmnto_vhclos_vlor" Type="decimal" Precision="16" Scale="2" />
+          <Property Name="mvmnto_vhclos_obsrvcnes" Type="varchar" MaxLength="500" />
+          <Property Name="usrios_cdgo" Type="varchar" MaxLength="20" />
+          <Property Name="fcha_prcso" Type="datetime" />
+          <Property Name="consecutivo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'AGROSIS.dbo.prfles_usrio' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="prfles_usrio">
+          <Key>
+            <PropertyRef Name="prfles_usrio_cdgo" />
+          </Key>
+          <Property Name="prfles_usrio_cdgo" Type="nvarchar" MaxLength="3" Nullable="false" />
+          <Property Name="prfles_usrio_dscrpcion" Type="nvarchar" MaxLength="50" />
+          <Property Name="prfles_usrio_actvo" Type="nvarchar" MaxLength="1" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.prmsos' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="prmsos">
+          <Property Name="texto" Type="varchar" MaxLength="30" />
+          <Property Name="prmsos" Type="char" MaxLength="1" />
+          <Property Name="prfles_usrio_cdgo" Type="varchar" MaxLength="3" />
+        </EntityType>-->
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.prmtros_gnrles' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="prmtros_gnrles">
+          <Property Name="cntros_cdgo" Type="nvarchar" MaxLength="20" />
+          <Property Name="pg_fctra_incial" Type="float" />
+          <Property Name="pg_fctra_fnal" Type="float" />
+          <Property Name="pg_nmro_rslcion" Type="nvarchar" MaxLength="50" />
+          <Property Name="pg_fcha_rslcion" Type="datetime" />
+          <Property Name="pg_vgncia_clve" Type="int" />
+          <Property Name="cddes_cdgo" Type="nvarchar" MaxLength="5" />
+          <Property Name="pg_rta_rprtes" Type="nvarchar" MaxLength="100" />
+          <Property Name="pg_rta_ftos" Type="nvarchar" MaxLength="100" />
+          <Property Name="pg_rta_dcmntcion" Type="nvarchar" MaxLength="100" />
+          <Property Name="pg_frmto_fcha" Type="char" MaxLength="19" />
+          <Property Name="pg_rta_backup" Type="varchar" MaxLength="100" />
+          <Property Name="pg_rta_rspldo" Type="varchar" MaxLength="100" />
+          <Property Name="pg_cnctdo" Type="char" MaxLength="1" />
+          <Property Name="srvdor" Type="char" MaxLength="20" />
+          <Property Name="cncptos_pgo_cdgo" Type="char" MaxLength="3" />
+          <Property Name="pg_db" Type="varchar" MaxLength="20" />
+          <Property Name="srvdor_mail" Type="varchar" MaxLength="50" />
+          <Property Name="rmtnte_mail" Type="varchar" MaxLength="50" />
+          <Property Name="asnto_mail" Type="varchar" MaxLength="100" />
+          <Property Name="crpo_mail" Type="varchar" MaxLength="100" />
+          <Property Name="usrio_mail" Type="varchar" MaxLength="50" />
+          <Property Name="clve_mail" Type="varchar" MaxLength="50" />
+          <Property Name="hra_avso_mail" Type="varchar" MaxLength="5" />
+          <Property Name="cnta_mail_uno" Type="varchar" MaxLength="50" />
+          <Property Name="cnta_mail_dos" Type="varchar" MaxLength="50" />
+          <Property Name="pg_vlor_hra" Type="decimal" Precision="6" Scale="2" />
+          <Property Name="prcntje_trnsprte" Type="decimal" Precision="4" Scale="2" />
+          <Property Name="cncptos_pgo_trnsprte" Type="varchar" MaxLength="3" />
+          <Property Name="cncptos_hra_dscnto" Type="varchar" MaxLength="3" />
+        </EntityType>-->
+        <EntityType Name="prsnas">
+          <Key>
+            <PropertyRef Name="prsnas_idntfccion" />
+          </Key>
+          <Property Name="prsnas_idntfccion" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="cddes_cdgo_expdcion" Type="varchar" MaxLength="6" />
+          <Property Name="prsnas_prmer_nmbre" Type="varchar" MaxLength="20" />
+          <Property Name="prsnas_sgndo_nmbre" Type="varchar" MaxLength="20" />
+          <Property Name="prsnas_prmer_aplldo" Type="varchar" MaxLength="20" />
+          <Property Name="prsnas_sgndo_aplldo" Type="varchar" MaxLength="20" />
+          <Property Name="prsnas_lgar_ncmnto" Type="varchar" MaxLength="6" />
+          <Property Name="prsnas_fcha_ncmnto" Type="datetime" />
+          <Property Name="tpos_sngre_cdgo" Type="varchar" MaxLength="3" />
+          <Property Name="prsnas_actvo" Type="char" MaxLength="1" />
+          <Property Name="prsnas_nmbre_cmplto" Type="varchar" MaxLength="100" />
+          <Property Name="usrios_cdgo" Type="varchar" MaxLength="20" />
+          <Property Name="fcha_prcso" Type="datetime" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'AGROSIS.dbo.prsnas_drccnes' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="prsnas_drccnes">
+          <Key>
+            <PropertyRef Name="consecutivo" />
+          </Key>
+          <Property Name="prsnas_idntfccion" Type="varchar" MaxLength="20" />
+          <Property Name="prsnas_drccnes_drccion" Type="varchar" MaxLength="200" />
+          <Property Name="cddes_cdgo" Type="varchar" MaxLength="5" />
+          <Property Name="prsnas_drccnes_actvo" Type="char" MaxLength="1" />
+          <Property Name="prsnas_drccnes_tlfno" Type="varchar" MaxLength="100" />
+          <Property Name="usrios_cdgo" Type="varchar" MaxLength="20" />
+          <Property Name="fcha_prcso" Type="datetime" />
+          <Property Name="consecutivo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'AGROSIS.dbo.prsnas_eps' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="prsnas_eps">
+          <Key>
+            <PropertyRef Name="consecutivo" />
+          </Key>
+          <Property Name="prsnas_idntfccion" Type="varchar" MaxLength="20" />
+          <Property Name="eps_cdgo" Type="char" MaxLength="3" />
+          <Property Name="fcha_aflcion" Type="datetime" />
+          <Property Name="usrios_cdgo" Type="varchar" MaxLength="20" />
+          <Property Name="fcha_prcso" Type="datetime" />
+          <Property Name="consecutivo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'AGROSIS.dbo.prsnas_fndos_pnsnes' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="prsnas_fndos_pnsnes">
+          <Key>
+            <PropertyRef Name="consecutivo" />
+          </Key>
+          <Property Name="prsnas_idntfccion" Type="varchar" MaxLength="20" />
+          <Property Name="fndos_pnsnes_cdgo" Type="varchar" MaxLength="3" />
+          <Property Name="fcha_aflcion" Type="datetime" />
+          <Property Name="usrios_cdgo" Type="varchar" MaxLength="20" />
+          <Property Name="fcha_prcso" Type="datetime" />
+          <Property Name="consecutivo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'AGROSIS.dbo.prsnas_obsrvcnes' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="prsnas_obsrvcnes">
+          <Key>
+            <PropertyRef Name="consecutivo" />
+          </Key>
+          <Property Name="prsnas_idntfccion" Type="varchar" MaxLength="20" />
+          <Property Name="prsnas_obsrvcnes" Type="varchar" MaxLength="1000" />
+          <Property Name="fcha_obsrvcion" Type="datetime" />
+          <Property Name="usrios_cdgo" Type="varchar" MaxLength="20" />
+          <Property Name="fcha_prcso" Type="datetime" />
+          <Property Name="consecutivo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'AGROSIS.dbo.prsnas_tlfnos' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="prsnas_tlfnos">
+          <Key>
+            <PropertyRef Name="consecutivo" />
+          </Key>
+          <Property Name="prsnas_idntfccion" Type="varchar" MaxLength="20" />
+          <Property Name="prsnas_tlfnos_tlfno" Type="varchar" MaxLength="20" />
+          <Property Name="cddes_cdgo" Type="varchar" MaxLength="5" />
+          <Property Name="prsnas_tlfnos_actvo" Type="char" MaxLength="1" />
+          <Property Name="prsnas_tlfnos_obsrvcion" Type="varchar" MaxLength="100" />
+          <Property Name="usrios_cdgo" Type="varchar" MaxLength="20" />
+          <Property Name="fcha_prcso" Type="datetime" />
+          <Property Name="consecutivo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.prvdres' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="prvdres">
+          <Property Name="tpos_dcmnto_cdgo" Type="varchar" MaxLength="3" />
+          <Property Name="prvdres_idntfccion" Type="varchar" MaxLength="20" />
+          <Property Name="prvdres_rzon_scial" Type="varchar" MaxLength="200" />
+          <Property Name="prvdres_drccion" Type="varchar" MaxLength="200" />
+          <Property Name="prvdres_tlfno" Type="varchar" MaxLength="20" />
+          <Property Name="prvdres_fax" Type="varchar" MaxLength="20" />
+          <Property Name="prvdres_mail" Type="varchar" MaxLength="100" />
+          <Property Name="cddes_cdgo" Type="varchar" MaxLength="5" />
+          <Property Name="prvdres_cntcto" Type="varchar" MaxLength="200" />
+          <Property Name="prvdres_tlfno_cntcto" Type="varchar" MaxLength="20" />
+          <Property Name="prvdres_cllar_cntcto" Type="varchar" MaxLength="20" />
+          <Property Name="prvdres_mail_cntcto" Type="varchar" MaxLength="100" />
+          <Property Name="prvdres_actvo" Type="char" MaxLength="1" />
+          <Property Name="prvdres_cdgo" Type="varchar" MaxLength="20" />
+          <Property Name="fcha_prcso" Type="datetime" />
+          <Property Name="prvdres_obsrvcnes" Type="varchar" MaxLength="500" />
+        </EntityType>-->
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.rles' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="rles">
+          <Property Name="rles_cdgo" Type="varchar" MaxLength="3" />
+          <Property Name="rles_dscrpcion" Type="varchar" MaxLength="50" />
+          <Property Name="rles_actvo" Type="char" MaxLength="1" />
+        </EntityType>-->
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.rles_prsnas' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="rles_prsnas">
+          <Property Name="prsnas_idntfccion" Type="varchar" MaxLength="20" />
+          <Property Name="rles_cdgo" Type="varchar" MaxLength="3" />
+          <Property Name="usrios_cdgo" Type="varchar" MaxLength="20" />
+          <Property Name="fcha_prcso" Type="datetime" />
+        </EntityType>-->
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.srvcios' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="srvcios">
+          <Property Name="srvcios_cdgo" Type="varchar" MaxLength="3" />
+          <Property Name="srvcios_dscrpcion" Type="varchar" MaxLength="100" />
+          <Property Name="srvcios_actvo" Type="char" MaxLength="1" />
+        </EntityType>-->
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.tpos_dcmnto' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="tpos_dcmnto">
+          <Property Name="tpos_dcmnto_cdgo" Type="varchar" MaxLength="3" />
+          <Property Name="tpos_dcmnto_dscrpcion" Type="varchar" MaxLength="100" />
+          <Property Name="tpos_dcmnto_actvo" Type="char" MaxLength="1" />
+        </EntityType>-->
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'AGROSIS.dbo.usrios' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="usrios">
+          <Key>
+            <PropertyRef Name="usrios_cdgo" />
+            <PropertyRef Name="usrios_dscrpcion" />
+            <PropertyRef Name="usrios_clve" />
+            <PropertyRef Name="usrios_actvo" />
+          </Key>
+          <Property Name="usrios_cdgo" Type="nvarchar" MaxLength="15" Nullable="false" />
+          <Property Name="usrios_dscrpcion" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="usrios_clve" Type="nvarchar" MaxLength="15" Nullable="false" />
+          <Property Name="usrios_actvo" Type="nvarchar" MaxLength="1" Nullable="false" />
+          <Property Name="usrios_admnstrdor" Type="nvarchar" MaxLength="1" />
+          <Property Name="usrios_frma_dgtal" Type="nvarchar" MaxLength="50" />
+          <Property Name="prfles_usrio_cdgo" Type="nvarchar" MaxLength="3" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'AGROSIS.dbo.usrios_clves' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="usrios_clves">
+          <Key>
+            <PropertyRef Name="usrios_cdgo" />
+            <PropertyRef Name="usrios_clve" />
+          </Key>
+          <Property Name="usrios_cdgo" Type="nvarchar" MaxLength="15" Nullable="false" />
+          <Property Name="usrios_clve" Type="nvarchar" MaxLength="15" Nullable="false" />
+          <Property Name="usrios_fcha_clve" Type="datetime" />
+          <Property Name="usrios_fcha_prcso" Type="datetime" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.usuarios' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="usuarios">
+          <Property Name="clntes_actvo" Type="varchar" MaxLength="50" />
+          <Property Name="clntes_cntcto" Type="varchar" MaxLength="50" />
+        </EntityType>-->
+        <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'AGROSIS.dbo.vhclos' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="vhclos">
+          <Property Name="vhclos_idntfccion" Type="varchar" MaxLength="20" />
+          <Property Name="clses_vhclos_cdgo" Type="char" MaxLength="3" />
+          <Property Name="vhclos_nmro_mtor" Type="varchar" MaxLength="50" />
+          <Property Name="vhclos_nmro_chsis" Type="varchar" MaxLength="50" />
+          <Property Name="vhclos_mdlo" Type="int" />
+          <Property Name="vhclos_actvo" Type="char" MaxLength="1" />
+          <Property Name="usrios_cdgo" Type="varchar" MaxLength="20" />
+          <Property Name="fcha_prcso" Type="datetime" />
+        </EntityType>-->
+        <EntityContainer Name="AGROSISModelStoreContainer">
+          <EntitySet Name="clntes" EntityType="Self.clntes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="clntes_drccnes" EntityType="Self.clntes_drccnes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="det_vles_drccnes" EntityType="Self.det_vles_drccnes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="det_vles_prsnas" EntityType="Self.det_vles_prsnas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="det_vles_srvcios" EntityType="Self.det_vles_srvcios" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="det_vles_vhclos" EntityType="Self.det_vles_vhclos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="enc_vles" EntityType="Self.enc_vles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mnnto_vhclos" EntityType="Self.mnnto_vhclos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="prsnas" EntityType="Self.prsnas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="cntros" EntityType="Self.cntros" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [cntros].[tpos_dcmnto_cdgo] AS [tpos_dcmnto_cdgo], 
+    [cntros].[cntros_cdgo] AS [cntros_cdgo], 
+    [cntros].[cntros_rzon_scial] AS [cntros_rzon_scial], 
+    [cntros].[cddes_cdgo] AS [cddes_cdgo], 
+    [cntros].[cntros_scrsal] AS [cntros_scrsal], 
+    [cntros].[cntros_drccion] AS [cntros_drccion], 
+    [cntros].[cntros_tlfno] AS [cntros_tlfno], 
+    [cntros].[cntros_mail] AS [cntros_mail], 
+    [cntros].[cntros_actvo] AS [cntros_actvo]
+    FROM [dbo].[cntros] AS [cntros]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="enc_vles_bck" EntityType="Self.enc_vles_bck" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [enc_vles_bck].[id_vale] AS [id_vale], 
+    [enc_vles_bck].[enc_vles_nmro] AS [enc_vles_nmro], 
+    [enc_vles_bck].[clntes_idntfccion] AS [clntes_idntfccion], 
+    [enc_vles_bck].[enc_vles_fcha] AS [enc_vles_fcha], 
+    [enc_vles_bck].[enc_vles_hra_entrda] AS [enc_vles_hra_entrda], 
+    [enc_vles_bck].[enc_vles_hra_slda] AS [enc_vles_hra_slda], 
+    [enc_vles_bck].[enc_vles_tmpo_dscnto] AS [enc_vles_tmpo_dscnto], 
+    [enc_vles_bck].[enc_vles_tmpo_trbjdo] AS [enc_vles_tmpo_trbjdo], 
+    [enc_vles_bck].[enc_vles_vlor_trnsprtes] AS [enc_vles_vlor_trnsprtes], 
+    [enc_vles_bck].[enc_vles_vlor_almntos] AS [enc_vles_vlor_almntos], 
+    [enc_vles_bck].[enc_vles_cmbstble] AS [enc_vles_cmbstble], 
+    [enc_vles_bck].[enc_fac_nmro] AS [enc_fac_nmro], 
+    [enc_vles_bck].[enc_vles_rlcion] AS [enc_vles_rlcion], 
+    [enc_vles_bck].[enc_vles_cncldo] AS [enc_vles_cncldo], 
+    [enc_vles_bck].[enc_vles_qncna] AS [enc_vles_qncna], 
+    [enc_vles_bck].[enc_vles_entrgdo] AS [enc_vles_entrgdo], 
+    [enc_vles_bck].[enc_vles_obsrvcnes] AS [enc_vles_obsrvcnes], 
+    [enc_vles_bck].[enc_vles_nmro_intrno] AS [enc_vles_nmro_intrno], 
+    [enc_vles_bck].[enc_vles_fctrdo] AS [enc_vles_fctrdo], 
+    [enc_vles_bck].[enc_vles_pgdo] AS [enc_vles_pgdo], 
+    [enc_vles_bck].[enc_vles_prcsdo] AS [enc_vles_prcsdo], 
+    [enc_vles_bck].[enc_vles_prcsdo_fctra] AS [enc_vles_prcsdo_fctra], 
+    [enc_vles_bck].[enc_vles_prcsdo_pgdo] AS [enc_vles_prcsdo_pgdo], 
+    [enc_vles_bck].[enc_vles_tmpral] AS [enc_vles_tmpral], 
+    [enc_vles_bck].[usrios_cdgo] AS [usrios_cdgo], 
+    [enc_vles_bck].[fcha_prcso] AS [fcha_prcso]
+    FROM [dbo].[enc_vles_bck] AS [enc_vles_bck]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="lstas_prcio" EntityType="Self.lstas_prcio" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [lstas_prcio].[cnvnios_cdgo] AS [cnvnios_cdgo], 
+    [lstas_prcio].[srvcios_cdgo] AS [srvcios_cdgo], 
+    [lstas_prcio].[lstas_prcio_vlor] AS [lstas_prcio_vlor], 
+    [lstas_prcio].[lstas_prcio_iva] AS [lstas_prcio_iva], 
+    [lstas_prcio].[lstas_prcio_prdo] AS [lstas_prcio_prdo], 
+    [lstas_prcio].[lstas_prcio_actvo] AS [lstas_prcio_actvo]
+    FROM [dbo].[lstas_prcio] AS [lstas_prcio]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="mvmnto_vhclos" EntityType="Self.mvmnto_vhclos" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [mvmnto_vhclos].[vhclos_idntfccion] AS [vhclos_idntfccion], 
+    [mvmnto_vhclos].[cncptos_mvmnto_cdgo] AS [cncptos_mvmnto_cdgo], 
+    [mvmnto_vhclos].[mvmnto_vhclos_fcha] AS [mvmnto_vhclos_fcha], 
+    [mvmnto_vhclos].[mvmnto_vhclos_dcmnto] AS [mvmnto_vhclos_dcmnto], 
+    [mvmnto_vhclos].[mvmnto_vhclos_vlor] AS [mvmnto_vhclos_vlor], 
+    [mvmnto_vhclos].[mvmnto_vhclos_obsrvcnes] AS [mvmnto_vhclos_obsrvcnes], 
+    [mvmnto_vhclos].[usrios_cdgo] AS [usrios_cdgo], 
+    [mvmnto_vhclos].[fcha_prcso] AS [fcha_prcso], 
+    [mvmnto_vhclos].[consecutivo] AS [consecutivo]
+    FROM [dbo].[mvmnto_vhclos] AS [mvmnto_vhclos]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="prfles_usrio" EntityType="Self.prfles_usrio" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [prfles_usrio].[prfles_usrio_cdgo] AS [prfles_usrio_cdgo], 
+    [prfles_usrio].[prfles_usrio_dscrpcion] AS [prfles_usrio_dscrpcion], 
+    [prfles_usrio].[prfles_usrio_actvo] AS [prfles_usrio_actvo]
+    FROM [dbo].[prfles_usrio] AS [prfles_usrio]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="prsnas_drccnes" EntityType="Self.prsnas_drccnes" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [prsnas_drccnes].[prsnas_idntfccion] AS [prsnas_idntfccion], 
+    [prsnas_drccnes].[prsnas_drccnes_drccion] AS [prsnas_drccnes_drccion], 
+    [prsnas_drccnes].[cddes_cdgo] AS [cddes_cdgo], 
+    [prsnas_drccnes].[prsnas_drccnes_actvo] AS [prsnas_drccnes_actvo], 
+    [prsnas_drccnes].[prsnas_drccnes_tlfno] AS [prsnas_drccnes_tlfno], 
+    [prsnas_drccnes].[usrios_cdgo] AS [usrios_cdgo], 
+    [prsnas_drccnes].[fcha_prcso] AS [fcha_prcso], 
+    [prsnas_drccnes].[consecutivo] AS [consecutivo]
+    FROM [dbo].[prsnas_drccnes] AS [prsnas_drccnes]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="prsnas_eps" EntityType="Self.prsnas_eps" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [prsnas_eps].[prsnas_idntfccion] AS [prsnas_idntfccion], 
+    [prsnas_eps].[eps_cdgo] AS [eps_cdgo], 
+    [prsnas_eps].[fcha_aflcion] AS [fcha_aflcion], 
+    [prsnas_eps].[usrios_cdgo] AS [usrios_cdgo], 
+    [prsnas_eps].[fcha_prcso] AS [fcha_prcso], 
+    [prsnas_eps].[consecutivo] AS [consecutivo]
+    FROM [dbo].[prsnas_eps] AS [prsnas_eps]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="prsnas_fndos_pnsnes" EntityType="Self.prsnas_fndos_pnsnes" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [prsnas_fndos_pnsnes].[prsnas_idntfccion] AS [prsnas_idntfccion], 
+    [prsnas_fndos_pnsnes].[fndos_pnsnes_cdgo] AS [fndos_pnsnes_cdgo], 
+    [prsnas_fndos_pnsnes].[fcha_aflcion] AS [fcha_aflcion], 
+    [prsnas_fndos_pnsnes].[usrios_cdgo] AS [usrios_cdgo], 
+    [prsnas_fndos_pnsnes].[fcha_prcso] AS [fcha_prcso], 
+    [prsnas_fndos_pnsnes].[consecutivo] AS [consecutivo]
+    FROM [dbo].[prsnas_fndos_pnsnes] AS [prsnas_fndos_pnsnes]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="prsnas_obsrvcnes" EntityType="Self.prsnas_obsrvcnes" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [prsnas_obsrvcnes].[prsnas_idntfccion] AS [prsnas_idntfccion], 
+    [prsnas_obsrvcnes].[prsnas_obsrvcnes] AS [prsnas_obsrvcnes], 
+    [prsnas_obsrvcnes].[fcha_obsrvcion] AS [fcha_obsrvcion], 
+    [prsnas_obsrvcnes].[usrios_cdgo] AS [usrios_cdgo], 
+    [prsnas_obsrvcnes].[fcha_prcso] AS [fcha_prcso], 
+    [prsnas_obsrvcnes].[consecutivo] AS [consecutivo]
+    FROM [dbo].[prsnas_obsrvcnes] AS [prsnas_obsrvcnes]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="prsnas_tlfnos" EntityType="Self.prsnas_tlfnos" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [prsnas_tlfnos].[prsnas_idntfccion] AS [prsnas_idntfccion], 
+    [prsnas_tlfnos].[prsnas_tlfnos_tlfno] AS [prsnas_tlfnos_tlfno], 
+    [prsnas_tlfnos].[cddes_cdgo] AS [cddes_cdgo], 
+    [prsnas_tlfnos].[prsnas_tlfnos_actvo] AS [prsnas_tlfnos_actvo], 
+    [prsnas_tlfnos].[prsnas_tlfnos_obsrvcion] AS [prsnas_tlfnos_obsrvcion], 
+    [prsnas_tlfnos].[usrios_cdgo] AS [usrios_cdgo], 
+    [prsnas_tlfnos].[fcha_prcso] AS [fcha_prcso], 
+    [prsnas_tlfnos].[consecutivo] AS [consecutivo]
+    FROM [dbo].[prsnas_tlfnos] AS [prsnas_tlfnos]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="usrios" EntityType="Self.usrios" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [usrios].[usrios_cdgo] AS [usrios_cdgo], 
+    [usrios].[usrios_dscrpcion] AS [usrios_dscrpcion], 
+    [usrios].[usrios_clve] AS [usrios_clve], 
+    [usrios].[usrios_actvo] AS [usrios_actvo], 
+    [usrios].[usrios_admnstrdor] AS [usrios_admnstrdor], 
+    [usrios].[usrios_frma_dgtal] AS [usrios_frma_dgtal], 
+    [usrios].[prfles_usrio_cdgo] AS [prfles_usrio_cdgo]
+    FROM [dbo].[usrios] AS [usrios]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="usrios_clves" EntityType="Self.usrios_clves" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [usrios_clves].[usrios_cdgo] AS [usrios_cdgo], 
+    [usrios_clves].[usrios_clve] AS [usrios_clve], 
+    [usrios_clves].[usrios_fcha_clve] AS [usrios_fcha_clve], 
+    [usrios_clves].[usrios_fcha_prcso] AS [usrios_fcha_prcso]
+    FROM [dbo].[usrios_clves] AS [usrios_clves]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AGROSISModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="clntes">
+          <Key>
+            <PropertyRef Name="clntes_idntfccion" />
+          </Key>
+          <Property Name="tpos_dcmnto_cdgo" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="clntes_idntfccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="clntes_rzon_scial" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="clntes_drccion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="clntes_tlfno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="clntes_fax" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="clntes_mail" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="cddes_cdgo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="clntes_cntcto" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="clntes_tlfno_cntcto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="clntes_cllar_cntcto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="clntes_mail_cntcto" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="clntes_actvo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="usrios_cdgo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="fcha_prcso" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="clntes_drccnes">
+          <Key>
+            <PropertyRef Name="consecutivo" />
+          </Key>
+          <Property Name="consecutivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="clntes_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="clntes_drccnes_nmbre" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="clntes_drccnes_drccion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="clntes_drccnes_cntcto" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="cddes_cdgo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="clntes_drccnes_actvo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="clntes_drccnes_tlfno" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="clntes_drccnes_obsrvcnes" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="usrios_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="fcha_prcso" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="det_vles_drccnes">
+          <Key>
+            <PropertyRef Name="consecutivo" />
+          </Key>
+          <Property Name="consecutivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="enc_vles_nmro" Type="Int32" />
+          <Property Name="clntes_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="clntes_drccnes_nmbre" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="clntes_drccnes_drccion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="det_vles_prsnas">
+          <Key>
+            <PropertyRef Name="consecutivo" />
+          </Key>
+          <Property Name="consecutivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="enc_vles_nmro" Type="Int32" />
+          <Property Name="prsnas_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="det_vles_srvcios">
+          <Key>
+            <PropertyRef Name="consecutivo" />
+          </Key>
+          <Property Name="consecutivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="enc_vles_nmro" Type="Int32" />
+          <Property Name="srvcios_cdgo" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="det_vles_hras" Type="Decimal" Precision="4" Scale="2" />
+          <Property Name="det_vles_vlor_srvcio" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="bloque" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="det_vles_vhclos">
+          <Key>
+            <PropertyRef Name="consecutivo" />
+          </Key>
+          <Property Name="consecutivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="enc_vles_nmro" Type="Int32" />
+          <Property Name="vhclos_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="enc_vles">
+          <Key>
+            <PropertyRef Name="enc_vles_nmro" />
+          </Key>
+          <Property Name="enc_vles_nmro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="clntes_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="enc_vles_fcha" Type="DateTime" Precision="3" />
+          <Property Name="enc_vles_hra_entrda" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="enc_vles_hra_slda" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="enc_vles_tmpo_dscnto" Type="Decimal" Precision="4" Scale="2" />
+          <Property Name="enc_vles_tmpo_trbjdo" Type="Decimal" Precision="4" Scale="2" />
+          <Property Name="enc_vles_vlor_trnsprtes" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="enc_vles_vlor_almntos" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="enc_vles_cmbstble" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="enc_fac_nmro" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="enc_vles_rlcion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="enc_vles_cncldo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="enc_vles_qncna" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="enc_vles_entrgdo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="enc_vles_obsrvcnes" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="enc_vles_nmro_intrno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="enc_vles_fctrdo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="enc_vles_pgdo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="enc_vles_prcsdo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="enc_vles_prcsdo_fctra" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="enc_vles_prcsdo_pgdo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="enc_vles_tmpral" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="usrios_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="fcha_prcso" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="mnnto_vhclos">
+          <Key>
+            <PropertyRef Name="consecutivo" />
+          </Key>
+          <Property Name="vhclos_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="cncptos_mnnto_cdgo" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="mnnto_nmro_hras" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="mnnto_nmro_hras_trbjdas" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="mnnto_vhclos_fcha_incial" Type="DateTime" Precision="3" />
+          <Property Name="mnnto_vhclos_fcha_fnal" Type="DateTime" Precision="3" />
+          <Property Name="mnnto_obsrvcnes" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="mnnto_actvo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="usrios_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="fcha_prcso" Type="DateTime" Precision="3" />
+          <Property Name="consecutivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="prsnas">
+          <Key>
+            <PropertyRef Name="prsnas_idntfccion" />
+          </Key>
+          <Property Name="prsnas_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="cddes_cdgo_expdcion" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="prsnas_prmer_nmbre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="prsnas_sgndo_nmbre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="prsnas_prmer_aplldo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="prsnas_sgndo_aplldo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="prsnas_lgar_ncmnto" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="prsnas_fcha_ncmnto" Type="DateTime" Precision="3" />
+          <Property Name="tpos_sngre_cdgo" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="prsnas_actvo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="prsnas_nmbre_cmplto" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="usrios_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="fcha_prcso" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="cntros">
+          <Key>
+            <PropertyRef Name="cntros_cdgo" />
+          </Key>
+          <Property Name="tpos_dcmnto_cdgo" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="cntros_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="cntros_rzon_scial" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="cddes_cdgo" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="cntros_scrsal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="cntros_drccion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="cntros_tlfno" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="cntros_mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="cntros_actvo" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="enc_vles_bck">
+          <Key>
+            <PropertyRef Name="id_vale" />
+            <PropertyRef Name="enc_vles_nmro" />
+            <PropertyRef Name="enc_fac_nmro" />
+            <PropertyRef Name="enc_vles_rlcion" />
+          </Key>
+          <Property Name="id_vale" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="enc_vles_nmro" Type="Int32" Nullable="false" />
+          <Property Name="clntes_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="enc_vles_fcha" Type="DateTime" Precision="3" />
+          <Property Name="enc_vles_hra_entrda" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="enc_vles_hra_slda" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="enc_vles_tmpo_dscnto" Type="Decimal" Precision="4" Scale="2" />
+          <Property Name="enc_vles_tmpo_trbjdo" Type="Decimal" Precision="4" Scale="2" />
+          <Property Name="enc_vles_vlor_trnsprtes" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="enc_vles_vlor_almntos" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="enc_vles_cmbstble" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="enc_fac_nmro" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="enc_vles_rlcion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="enc_vles_cncldo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="enc_vles_qncna" Type="DateTime" Precision="3" />
+          <Property Name="enc_vles_entrgdo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="enc_vles_obsrvcnes" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="enc_vles_nmro_intrno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="enc_vles_fctrdo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="enc_vles_pgdo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="enc_vles_prcsdo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="enc_vles_prcsdo_fctra" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="enc_vles_prcsdo_pgdo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="enc_vles_tmpral" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="usrios_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="fcha_prcso" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="lstas_prcio">
+          <Key>
+            <PropertyRef Name="cnvnios_cdgo" />
+            <PropertyRef Name="srvcios_cdgo" />
+          </Key>
+          <Property Name="cnvnios_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="srvcios_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="lstas_prcio_vlor" Type="Double" />
+          <Property Name="lstas_prcio_iva" Type="Double" />
+          <Property Name="lstas_prcio_prdo" Type="Int32" />
+          <Property Name="lstas_prcio_actvo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="mvmnto_vhclos">
+          <Key>
+            <PropertyRef Name="consecutivo" />
+          </Key>
+          <Property Name="vhclos_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="cncptos_mvmnto_cdgo" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="mvmnto_vhclos_fcha" Type="DateTime" Precision="3" />
+          <Property Name="mvmnto_vhclos_dcmnto" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="mvmnto_vhclos_vlor" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="mvmnto_vhclos_obsrvcnes" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="usrios_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="fcha_prcso" Type="DateTime" Precision="3" />
+          <Property Name="consecutivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="prfles_usrio">
+          <Key>
+            <PropertyRef Name="prfles_usrio_cdgo" />
+          </Key>
+          <Property Name="prfles_usrio_cdgo" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="prfles_usrio_dscrpcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="prfles_usrio_actvo" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="prsnas_drccnes">
+          <Key>
+            <PropertyRef Name="consecutivo" />
+          </Key>
+          <Property Name="prsnas_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="prsnas_drccnes_drccion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="cddes_cdgo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="prsnas_drccnes_actvo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="prsnas_drccnes_tlfno" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="usrios_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="fcha_prcso" Type="DateTime" Precision="3" />
+          <Property Name="consecutivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="prsnas_eps">
+          <Key>
+            <PropertyRef Name="consecutivo" />
+          </Key>
+          <Property Name="prsnas_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="eps_cdgo" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Name="fcha_aflcion" Type="DateTime" Precision="3" />
+          <Property Name="usrios_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="fcha_prcso" Type="DateTime" Precision="3" />
+          <Property Name="consecutivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="prsnas_fndos_pnsnes">
+          <Key>
+            <PropertyRef Name="consecutivo" />
+          </Key>
+          <Property Name="prsnas_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="fndos_pnsnes_cdgo" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="fcha_aflcion" Type="DateTime" Precision="3" />
+          <Property Name="usrios_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="fcha_prcso" Type="DateTime" Precision="3" />
+          <Property Name="consecutivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="prsnas_obsrvcnes">
+          <Key>
+            <PropertyRef Name="consecutivo" />
+          </Key>
+          <Property Name="prsnas_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="prsnas_obsrvcnes1" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="fcha_obsrvcion" Type="DateTime" Precision="3" />
+          <Property Name="usrios_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="fcha_prcso" Type="DateTime" Precision="3" />
+          <Property Name="consecutivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="prsnas_tlfnos">
+          <Key>
+            <PropertyRef Name="consecutivo" />
+          </Key>
+          <Property Name="prsnas_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="prsnas_tlfnos_tlfno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="cddes_cdgo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="prsnas_tlfnos_actvo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="prsnas_tlfnos_obsrvcion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="usrios_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="fcha_prcso" Type="DateTime" Precision="3" />
+          <Property Name="consecutivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="usrios">
+          <Key>
+            <PropertyRef Name="usrios_cdgo" />
+            <PropertyRef Name="usrios_dscrpcion" />
+            <PropertyRef Name="usrios_clve" />
+            <PropertyRef Name="usrios_actvo" />
+          </Key>
+          <Property Name="usrios_cdgo" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="usrios_dscrpcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="usrios_clve" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="usrios_actvo" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="usrios_admnstrdor" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="usrios_frma_dgtal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="prfles_usrio_cdgo" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="usrios_clves">
+          <Key>
+            <PropertyRef Name="usrios_cdgo" />
+            <PropertyRef Name="usrios_clve" />
+          </Key>
+          <Property Name="usrios_cdgo" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="usrios_clve" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="usrios_fcha_clve" Type="DateTime" Precision="3" />
+          <Property Name="usrios_fcha_prcso" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="AGROSISEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="clntes" EntityType="Self.clntes" />
+          <EntitySet Name="clntes_drccnes" EntityType="Self.clntes_drccnes" />
+          <EntitySet Name="det_vles_drccnes" EntityType="Self.det_vles_drccnes" />
+          <EntitySet Name="det_vles_prsnas" EntityType="Self.det_vles_prsnas" />
+          <EntitySet Name="det_vles_srvcios" EntityType="Self.det_vles_srvcios" />
+          <EntitySet Name="det_vles_vhclos" EntityType="Self.det_vles_vhclos" />
+          <EntitySet Name="enc_vles" EntityType="Self.enc_vles" />
+          <EntitySet Name="mnnto_vhclos" EntityType="Self.mnnto_vhclos" />
+          <EntitySet Name="prsnas" EntityType="Self.prsnas" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <EntitySet Name="cntros" EntityType="Self.cntros" />
+          <EntitySet Name="enc_vles_bck" EntityType="Self.enc_vles_bck" />
+          <EntitySet Name="lstas_prcio" EntityType="Self.lstas_prcio" />
+          <EntitySet Name="mvmnto_vhclos" EntityType="Self.mvmnto_vhclos" />
+          <EntitySet Name="prfles_usrio" EntityType="Self.prfles_usrio" />
+          <EntitySet Name="prsnas_drccnes" EntityType="Self.prsnas_drccnes" />
+          <EntitySet Name="prsnas_eps" EntityType="Self.prsnas_eps" />
+          <EntitySet Name="prsnas_fndos_pnsnes" EntityType="Self.prsnas_fndos_pnsnes" />
+          <EntitySet Name="prsnas_obsrvcnes" EntityType="Self.prsnas_obsrvcnes" />
+          <EntitySet Name="prsnas_tlfnos" EntityType="Self.prsnas_tlfnos" />
+          <EntitySet Name="usrios" EntityType="Self.usrios" />
+          <EntitySet Name="usrios_clves" EntityType="Self.usrios_clves" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AGROSISModelStoreContainer" CdmEntityContainer="AGROSISEntities">
+          <EntitySetMapping Name="clntes">
+            <EntityTypeMapping TypeName="AGROSISModel.clntes">
+              <MappingFragment StoreEntitySet="clntes">
+                <ScalarProperty Name="tpos_dcmnto_cdgo" ColumnName="tpos_dcmnto_cdgo" />
+                <ScalarProperty Name="clntes_idntfccion" ColumnName="clntes_idntfccion" />
+                <ScalarProperty Name="clntes_rzon_scial" ColumnName="clntes_rzon_scial" />
+                <ScalarProperty Name="clntes_drccion" ColumnName="clntes_drccion" />
+                <ScalarProperty Name="clntes_tlfno" ColumnName="clntes_tlfno" />
+                <ScalarProperty Name="clntes_fax" ColumnName="clntes_fax" />
+                <ScalarProperty Name="clntes_mail" ColumnName="clntes_mail" />
+                <ScalarProperty Name="cddes_cdgo" ColumnName="cddes_cdgo" />
+                <ScalarProperty Name="clntes_cntcto" ColumnName="clntes_cntcto" />
+                <ScalarProperty Name="clntes_tlfno_cntcto" ColumnName="clntes_tlfno_cntcto" />
+                <ScalarProperty Name="clntes_cllar_cntcto" ColumnName="clntes_cllar_cntcto" />
+                <ScalarProperty Name="clntes_mail_cntcto" ColumnName="clntes_mail_cntcto" />
+                <ScalarProperty Name="clntes_actvo" ColumnName="clntes_actvo" />
+                <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+                <ScalarProperty Name="fcha_prcso" ColumnName="fcha_prcso" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="clntes_drccnes">
+            <EntityTypeMapping TypeName="AGROSISModel.clntes_drccnes">
+              <MappingFragment StoreEntitySet="clntes_drccnes">
+                <ScalarProperty Name="consecutivo" ColumnName="consecutivo" />
+                <ScalarProperty Name="clntes_idntfccion" ColumnName="clntes_idntfccion" />
+                <ScalarProperty Name="clntes_drccnes_nmbre" ColumnName="clntes_drccnes_nmbre" />
+                <ScalarProperty Name="clntes_drccnes_drccion" ColumnName="clntes_drccnes_drccion" />
+                <ScalarProperty Name="clntes_drccnes_cntcto" ColumnName="clntes_drccnes_cntcto" />
+                <ScalarProperty Name="cddes_cdgo" ColumnName="cddes_cdgo" />
+                <ScalarProperty Name="clntes_drccnes_actvo" ColumnName="clntes_drccnes_actvo" />
+                <ScalarProperty Name="clntes_drccnes_tlfno" ColumnName="clntes_drccnes_tlfno" />
+                <ScalarProperty Name="clntes_drccnes_obsrvcnes" ColumnName="clntes_drccnes_obsrvcnes" />
+                <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+                <ScalarProperty Name="fcha_prcso" ColumnName="fcha_prcso" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="det_vles_drccnes">
+            <EntityTypeMapping TypeName="AGROSISModel.det_vles_drccnes">
+              <MappingFragment StoreEntitySet="det_vles_drccnes">
+                <ScalarProperty Name="consecutivo" ColumnName="consecutivo" />
+                <ScalarProperty Name="enc_vles_nmro" ColumnName="enc_vles_nmro" />
+                <ScalarProperty Name="clntes_idntfccion" ColumnName="clntes_idntfccion" />
+                <ScalarProperty Name="clntes_drccnes_nmbre" ColumnName="clntes_drccnes_nmbre" />
+                <ScalarProperty Name="clntes_drccnes_drccion" ColumnName="clntes_drccnes_drccion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="det_vles_prsnas">
+            <EntityTypeMapping TypeName="AGROSISModel.det_vles_prsnas">
+              <MappingFragment StoreEntitySet="det_vles_prsnas">
+                <ScalarProperty Name="consecutivo" ColumnName="consecutivo" />
+                <ScalarProperty Name="enc_vles_nmro" ColumnName="enc_vles_nmro" />
+                <ScalarProperty Name="prsnas_idntfccion" ColumnName="prsnas_idntfccion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="det_vles_srvcios">
+            <EntityTypeMapping TypeName="AGROSISModel.det_vles_srvcios">
+              <MappingFragment StoreEntitySet="det_vles_srvcios">
+                <ScalarProperty Name="consecutivo" ColumnName="consecutivo" />
+                <ScalarProperty Name="enc_vles_nmro" ColumnName="enc_vles_nmro" />
+                <ScalarProperty Name="srvcios_cdgo" ColumnName="srvcios_cdgo" />
+                <ScalarProperty Name="det_vles_hras" ColumnName="det_vles_hras" />
+                <ScalarProperty Name="det_vles_vlor_srvcio" ColumnName="det_vles_vlor_srvcio" />
+                <ScalarProperty Name="bloque" ColumnName="bloque" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="det_vles_vhclos">
+            <EntityTypeMapping TypeName="AGROSISModel.det_vles_vhclos">
+              <MappingFragment StoreEntitySet="det_vles_vhclos">
+                <ScalarProperty Name="consecutivo" ColumnName="consecutivo" />
+                <ScalarProperty Name="enc_vles_nmro" ColumnName="enc_vles_nmro" />
+                <ScalarProperty Name="vhclos_idntfccion" ColumnName="vhclos_idntfccion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="enc_vles">
+            <EntityTypeMapping TypeName="AGROSISModel.enc_vles">
+              <MappingFragment StoreEntitySet="enc_vles">
+                <ScalarProperty Name="enc_vles_nmro" ColumnName="enc_vles_nmro" />
+                <ScalarProperty Name="clntes_idntfccion" ColumnName="clntes_idntfccion" />
+                <ScalarProperty Name="enc_vles_fcha" ColumnName="enc_vles_fcha" />
+                <ScalarProperty Name="enc_vles_hra_entrda" ColumnName="enc_vles_hra_entrda" />
+                <ScalarProperty Name="enc_vles_hra_slda" ColumnName="enc_vles_hra_slda" />
+                <ScalarProperty Name="enc_vles_tmpo_dscnto" ColumnName="enc_vles_tmpo_dscnto" />
+                <ScalarProperty Name="enc_vles_tmpo_trbjdo" ColumnName="enc_vles_tmpo_trbjdo" />
+                <ScalarProperty Name="enc_vles_vlor_trnsprtes" ColumnName="enc_vles_vlor_trnsprtes" />
+                <ScalarProperty Name="enc_vles_vlor_almntos" ColumnName="enc_vles_vlor_almntos" />
+                <ScalarProperty Name="enc_vles_cmbstble" ColumnName="enc_vles_cmbstble" />
+                <ScalarProperty Name="enc_fac_nmro" ColumnName="enc_fac_nmro" />
+                <ScalarProperty Name="enc_vles_rlcion" ColumnName="enc_vles_rlcion" />
+                <ScalarProperty Name="enc_vles_cncldo" ColumnName="enc_vles_cncldo" />
+                <ScalarProperty Name="enc_vles_qncna" ColumnName="enc_vles_qncna" />
+                <ScalarProperty Name="enc_vles_entrgdo" ColumnName="enc_vles_entrgdo" />
+                <ScalarProperty Name="enc_vles_obsrvcnes" ColumnName="enc_vles_obsrvcnes" />
+                <ScalarProperty Name="enc_vles_nmro_intrno" ColumnName="enc_vles_nmro_intrno" />
+                <ScalarProperty Name="enc_vles_fctrdo" ColumnName="enc_vles_fctrdo" />
+                <ScalarProperty Name="enc_vles_pgdo" ColumnName="enc_vles_pgdo" />
+                <ScalarProperty Name="enc_vles_prcsdo" ColumnName="enc_vles_prcsdo" />
+                <ScalarProperty Name="enc_vles_prcsdo_fctra" ColumnName="enc_vles_prcsdo_fctra" />
+                <ScalarProperty Name="enc_vles_prcsdo_pgdo" ColumnName="enc_vles_prcsdo_pgdo" />
+                <ScalarProperty Name="enc_vles_tmpral" ColumnName="enc_vles_tmpral" />
+                <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+                <ScalarProperty Name="fcha_prcso" ColumnName="fcha_prcso" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mnnto_vhclos">
+            <EntityTypeMapping TypeName="AGROSISModel.mnnto_vhclos">
+              <MappingFragment StoreEntitySet="mnnto_vhclos">
+                <ScalarProperty Name="vhclos_idntfccion" ColumnName="vhclos_idntfccion" />
+                <ScalarProperty Name="cncptos_mnnto_cdgo" ColumnName="cncptos_mnnto_cdgo" />
+                <ScalarProperty Name="mnnto_nmro_hras" ColumnName="mnnto_nmro_hras" />
+                <ScalarProperty Name="mnnto_nmro_hras_trbjdas" ColumnName="mnnto_nmro_hras_trbjdas" />
+                <ScalarProperty Name="mnnto_vhclos_fcha_incial" ColumnName="mnnto_vhclos_fcha_incial" />
+                <ScalarProperty Name="mnnto_vhclos_fcha_fnal" ColumnName="mnnto_vhclos_fcha_fnal" />
+                <ScalarProperty Name="mnnto_obsrvcnes" ColumnName="mnnto_obsrvcnes" />
+                <ScalarProperty Name="mnnto_actvo" ColumnName="mnnto_actvo" />
+                <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+                <ScalarProperty Name="fcha_prcso" ColumnName="fcha_prcso" />
+                <ScalarProperty Name="consecutivo" ColumnName="consecutivo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="prsnas">
+            <EntityTypeMapping TypeName="AGROSISModel.prsnas">
+              <MappingFragment StoreEntitySet="prsnas">
+                <ScalarProperty Name="prsnas_idntfccion" ColumnName="prsnas_idntfccion" />
+                <ScalarProperty Name="cddes_cdgo_expdcion" ColumnName="cddes_cdgo_expdcion" />
+                <ScalarProperty Name="prsnas_prmer_nmbre" ColumnName="prsnas_prmer_nmbre" />
+                <ScalarProperty Name="prsnas_sgndo_nmbre" ColumnName="prsnas_sgndo_nmbre" />
+                <ScalarProperty Name="prsnas_prmer_aplldo" ColumnName="prsnas_prmer_aplldo" />
+                <ScalarProperty Name="prsnas_sgndo_aplldo" ColumnName="prsnas_sgndo_aplldo" />
+                <ScalarProperty Name="prsnas_lgar_ncmnto" ColumnName="prsnas_lgar_ncmnto" />
+                <ScalarProperty Name="prsnas_fcha_ncmnto" ColumnName="prsnas_fcha_ncmnto" />
+                <ScalarProperty Name="tpos_sngre_cdgo" ColumnName="tpos_sngre_cdgo" />
+                <ScalarProperty Name="prsnas_actvo" ColumnName="prsnas_actvo" />
+                <ScalarProperty Name="prsnas_nmbre_cmplto" ColumnName="prsnas_nmbre_cmplto" />
+                <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+                <ScalarProperty Name="fcha_prcso" ColumnName="fcha_prcso" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="AGROSISModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cntros">
+            <EntityTypeMapping TypeName="AGROSISModel.cntros">
+              <MappingFragment StoreEntitySet="cntros">
+                <ScalarProperty Name="tpos_dcmnto_cdgo" ColumnName="tpos_dcmnto_cdgo" />
+                <ScalarProperty Name="cntros_cdgo" ColumnName="cntros_cdgo" />
+                <ScalarProperty Name="cntros_rzon_scial" ColumnName="cntros_rzon_scial" />
+                <ScalarProperty Name="cddes_cdgo" ColumnName="cddes_cdgo" />
+                <ScalarProperty Name="cntros_scrsal" ColumnName="cntros_scrsal" />
+                <ScalarProperty Name="cntros_drccion" ColumnName="cntros_drccion" />
+                <ScalarProperty Name="cntros_tlfno" ColumnName="cntros_tlfno" />
+                <ScalarProperty Name="cntros_mail" ColumnName="cntros_mail" />
+                <ScalarProperty Name="cntros_actvo" ColumnName="cntros_actvo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="enc_vles_bck">
+            <EntityTypeMapping TypeName="AGROSISModel.enc_vles_bck">
+              <MappingFragment StoreEntitySet="enc_vles_bck">
+                <ScalarProperty Name="id_vale" ColumnName="id_vale" />
+                <ScalarProperty Name="enc_vles_nmro" ColumnName="enc_vles_nmro" />
+                <ScalarProperty Name="clntes_idntfccion" ColumnName="clntes_idntfccion" />
+                <ScalarProperty Name="enc_vles_fcha" ColumnName="enc_vles_fcha" />
+                <ScalarProperty Name="enc_vles_hra_entrda" ColumnName="enc_vles_hra_entrda" />
+                <ScalarProperty Name="enc_vles_hra_slda" ColumnName="enc_vles_hra_slda" />
+                <ScalarProperty Name="enc_vles_tmpo_dscnto" ColumnName="enc_vles_tmpo_dscnto" />
+                <ScalarProperty Name="enc_vles_tmpo_trbjdo" ColumnName="enc_vles_tmpo_trbjdo" />
+                <ScalarProperty Name="enc_vles_vlor_trnsprtes" ColumnName="enc_vles_vlor_trnsprtes" />
+                <ScalarProperty Name="enc_vles_vlor_almntos" ColumnName="enc_vles_vlor_almntos" />
+                <ScalarProperty Name="enc_vles_cmbstble" ColumnName="enc_vles_cmbstble" />
+                <ScalarProperty Name="enc_fac_nmro" ColumnName="enc_fac_nmro" />
+                <ScalarProperty Name="enc_vles_rlcion" ColumnName="enc_vles_rlcion" />
+                <ScalarProperty Name="enc_vles_cncldo" ColumnName="enc_vles_cncldo" />
+                <ScalarProperty Name="enc_vles_qncna" ColumnName="enc_vles_qncna" />
+                <ScalarProperty Name="enc_vles_entrgdo" ColumnName="enc_vles_entrgdo" />
+                <ScalarProperty Name="enc_vles_obsrvcnes" ColumnName="enc_vles_obsrvcnes" />
+                <ScalarProperty Name="enc_vles_nmro_intrno" ColumnName="enc_vles_nmro_intrno" />
+                <ScalarProperty Name="enc_vles_fctrdo" ColumnName="enc_vles_fctrdo" />
+                <ScalarProperty Name="enc_vles_pgdo" ColumnName="enc_vles_pgdo" />
+                <ScalarProperty Name="enc_vles_prcsdo" ColumnName="enc_vles_prcsdo" />
+                <ScalarProperty Name="enc_vles_prcsdo_fctra" ColumnName="enc_vles_prcsdo_fctra" />
+                <ScalarProperty Name="enc_vles_prcsdo_pgdo" ColumnName="enc_vles_prcsdo_pgdo" />
+                <ScalarProperty Name="enc_vles_tmpral" ColumnName="enc_vles_tmpral" />
+                <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+                <ScalarProperty Name="fcha_prcso" ColumnName="fcha_prcso" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="lstas_prcio">
+            <EntityTypeMapping TypeName="AGROSISModel.lstas_prcio">
+              <MappingFragment StoreEntitySet="lstas_prcio">
+                <ScalarProperty Name="cnvnios_cdgo" ColumnName="cnvnios_cdgo" />
+                <ScalarProperty Name="srvcios_cdgo" ColumnName="srvcios_cdgo" />
+                <ScalarProperty Name="lstas_prcio_vlor" ColumnName="lstas_prcio_vlor" />
+                <ScalarProperty Name="lstas_prcio_iva" ColumnName="lstas_prcio_iva" />
+                <ScalarProperty Name="lstas_prcio_prdo" ColumnName="lstas_prcio_prdo" />
+                <ScalarProperty Name="lstas_prcio_actvo" ColumnName="lstas_prcio_actvo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mvmnto_vhclos">
+            <EntityTypeMapping TypeName="AGROSISModel.mvmnto_vhclos">
+              <MappingFragment StoreEntitySet="mvmnto_vhclos">
+                <ScalarProperty Name="vhclos_idntfccion" ColumnName="vhclos_idntfccion" />
+                <ScalarProperty Name="cncptos_mvmnto_cdgo" ColumnName="cncptos_mvmnto_cdgo" />
+                <ScalarProperty Name="mvmnto_vhclos_fcha" ColumnName="mvmnto_vhclos_fcha" />
+                <ScalarProperty Name="mvmnto_vhclos_dcmnto" ColumnName="mvmnto_vhclos_dcmnto" />
+                <ScalarProperty Name="mvmnto_vhclos_vlor" ColumnName="mvmnto_vhclos_vlor" />
+                <ScalarProperty Name="mvmnto_vhclos_obsrvcnes" ColumnName="mvmnto_vhclos_obsrvcnes" />
+                <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+                <ScalarProperty Name="fcha_prcso" ColumnName="fcha_prcso" />
+                <ScalarProperty Name="consecutivo" ColumnName="consecutivo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="prfles_usrio">
+            <EntityTypeMapping TypeName="AGROSISModel.prfles_usrio">
+              <MappingFragment StoreEntitySet="prfles_usrio">
+                <ScalarProperty Name="prfles_usrio_cdgo" ColumnName="prfles_usrio_cdgo" />
+                <ScalarProperty Name="prfles_usrio_dscrpcion" ColumnName="prfles_usrio_dscrpcion" />
+                <ScalarProperty Name="prfles_usrio_actvo" ColumnName="prfles_usrio_actvo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="prsnas_drccnes">
+            <EntityTypeMapping TypeName="AGROSISModel.prsnas_drccnes">
+              <MappingFragment StoreEntitySet="prsnas_drccnes">
+                <ScalarProperty Name="prsnas_idntfccion" ColumnName="prsnas_idntfccion" />
+                <ScalarProperty Name="prsnas_drccnes_drccion" ColumnName="prsnas_drccnes_drccion" />
+                <ScalarProperty Name="cddes_cdgo" ColumnName="cddes_cdgo" />
+                <ScalarProperty Name="prsnas_drccnes_actvo" ColumnName="prsnas_drccnes_actvo" />
+                <ScalarProperty Name="prsnas_drccnes_tlfno" ColumnName="prsnas_drccnes_tlfno" />
+                <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+                <ScalarProperty Name="fcha_prcso" ColumnName="fcha_prcso" />
+                <ScalarProperty Name="consecutivo" ColumnName="consecutivo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="prsnas_eps">
+            <EntityTypeMapping TypeName="AGROSISModel.prsnas_eps">
+              <MappingFragment StoreEntitySet="prsnas_eps">
+                <ScalarProperty Name="prsnas_idntfccion" ColumnName="prsnas_idntfccion" />
+                <ScalarProperty Name="eps_cdgo" ColumnName="eps_cdgo" />
+                <ScalarProperty Name="fcha_aflcion" ColumnName="fcha_aflcion" />
+                <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+                <ScalarProperty Name="fcha_prcso" ColumnName="fcha_prcso" />
+                <ScalarProperty Name="consecutivo" ColumnName="consecutivo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="prsnas_fndos_pnsnes">
+            <EntityTypeMapping TypeName="AGROSISModel.prsnas_fndos_pnsnes">
+              <MappingFragment StoreEntitySet="prsnas_fndos_pnsnes">
+                <ScalarProperty Name="prsnas_idntfccion" ColumnName="prsnas_idntfccion" />
+                <ScalarProperty Name="fndos_pnsnes_cdgo" ColumnName="fndos_pnsnes_cdgo" />
+                <ScalarProperty Name="fcha_aflcion" ColumnName="fcha_aflcion" />
+                <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+                <ScalarProperty Name="fcha_prcso" ColumnName="fcha_prcso" />
+                <ScalarProperty Name="consecutivo" ColumnName="consecutivo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="prsnas_obsrvcnes">
+            <EntityTypeMapping TypeName="AGROSISModel.prsnas_obsrvcnes">
+              <MappingFragment StoreEntitySet="prsnas_obsrvcnes">
+                <ScalarProperty Name="prsnas_idntfccion" ColumnName="prsnas_idntfccion" />
+                <ScalarProperty Name="prsnas_obsrvcnes1" ColumnName="prsnas_obsrvcnes" />
+                <ScalarProperty Name="fcha_obsrvcion" ColumnName="fcha_obsrvcion" />
+                <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+                <ScalarProperty Name="fcha_prcso" ColumnName="fcha_prcso" />
+                <ScalarProperty Name="consecutivo" ColumnName="consecutivo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="prsnas_tlfnos">
+            <EntityTypeMapping TypeName="AGROSISModel.prsnas_tlfnos">
+              <MappingFragment StoreEntitySet="prsnas_tlfnos">
+                <ScalarProperty Name="prsnas_idntfccion" ColumnName="prsnas_idntfccion" />
+                <ScalarProperty Name="prsnas_tlfnos_tlfno" ColumnName="prsnas_tlfnos_tlfno" />
+                <ScalarProperty Name="cddes_cdgo" ColumnName="cddes_cdgo" />
+                <ScalarProperty Name="prsnas_tlfnos_actvo" ColumnName="prsnas_tlfnos_actvo" />
+                <ScalarProperty Name="prsnas_tlfnos_obsrvcion" ColumnName="prsnas_tlfnos_obsrvcion" />
+                <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+                <ScalarProperty Name="fcha_prcso" ColumnName="fcha_prcso" />
+                <ScalarProperty Name="consecutivo" ColumnName="consecutivo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="usrios">
+            <EntityTypeMapping TypeName="AGROSISModel.usrios">
+              <MappingFragment StoreEntitySet="usrios">
+                <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+                <ScalarProperty Name="usrios_dscrpcion" ColumnName="usrios_dscrpcion" />
+                <ScalarProperty Name="usrios_clve" ColumnName="usrios_clve" />
+                <ScalarProperty Name="usrios_actvo" ColumnName="usrios_actvo" />
+                <ScalarProperty Name="usrios_admnstrdor" ColumnName="usrios_admnstrdor" />
+                <ScalarProperty Name="usrios_frma_dgtal" ColumnName="usrios_frma_dgtal" />
+                <ScalarProperty Name="prfles_usrio_cdgo" ColumnName="prfles_usrio_cdgo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="usrios_clves">
+            <EntityTypeMapping TypeName="AGROSISModel.usrios_clves">
+              <MappingFragment StoreEntitySet="usrios_clves">
+                <ScalarProperty Name="usrios_cdgo" ColumnName="usrios_cdgo" />
+                <ScalarProperty Name="usrios_clve" ColumnName="usrios_clve" />
+                <ScalarProperty Name="usrios_fcha_clve" ColumnName="usrios_fcha_clve" />
+                <ScalarProperty Name="usrios_fcha_prcso" ColumnName="usrios_fcha_prcso" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

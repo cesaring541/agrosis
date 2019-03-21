@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AGROSISModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="clntes">
+    <Key>
+      <PropertyRef Name="clntes_idntfccion" />
+    </Key>
+    <Property Name="tpos_dcmnto_cdgo" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="clntes_idntfccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="clntes_rzon_scial" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="clntes_drccion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="clntes_tlfno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="clntes_fax" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="clntes_mail" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="cddes_cdgo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="clntes_cntcto" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="clntes_tlfno_cntcto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="clntes_cllar_cntcto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="clntes_mail_cntcto" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="clntes_actvo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="usrios_cdgo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fcha_prcso" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="clntes_drccnes">
+    <Key>
+      <PropertyRef Name="consecutivo" />
+    </Key>
+    <Property Name="consecutivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="clntes_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="clntes_drccnes_nmbre" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="clntes_drccnes_drccion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="clntes_drccnes_cntcto" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="cddes_cdgo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="clntes_drccnes_actvo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="clntes_drccnes_tlfno" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="clntes_drccnes_obsrvcnes" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="usrios_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="fcha_prcso" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="det_vles_drccnes">
+    <Key>
+      <PropertyRef Name="consecutivo" />
+    </Key>
+    <Property Name="consecutivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="enc_vles_nmro" Type="Int32" />
+    <Property Name="clntes_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="clntes_drccnes_nmbre" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="clntes_drccnes_drccion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="det_vles_prsnas">
+    <Key>
+      <PropertyRef Name="consecutivo" />
+    </Key>
+    <Property Name="consecutivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="enc_vles_nmro" Type="Int32" />
+    <Property Name="prsnas_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="det_vles_srvcios">
+    <Key>
+      <PropertyRef Name="consecutivo" />
+    </Key>
+    <Property Name="consecutivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="enc_vles_nmro" Type="Int32" />
+    <Property Name="srvcios_cdgo" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="det_vles_hras" Type="Decimal" Precision="4" Scale="2" />
+    <Property Name="det_vles_vlor_srvcio" Type="Decimal" Precision="16" Scale="2" />
+    <Property Name="bloque" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="det_vles_vhclos">
+    <Key>
+      <PropertyRef Name="consecutivo" />
+    </Key>
+    <Property Name="consecutivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="enc_vles_nmro" Type="Int32" />
+    <Property Name="vhclos_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="enc_vles">
+    <Key>
+      <PropertyRef Name="enc_vles_nmro" />
+    </Key>
+    <Property Name="enc_vles_nmro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="clntes_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="enc_vles_fcha" Type="DateTime" Precision="3" />
+    <Property Name="enc_vles_hra_entrda" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="enc_vles_hra_slda" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="enc_vles_tmpo_dscnto" Type="Decimal" Precision="4" Scale="2" />
+    <Property Name="enc_vles_tmpo_trbjdo" Type="Decimal" Precision="4" Scale="2" />
+    <Property Name="enc_vles_vlor_trnsprtes" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="enc_vles_vlor_almntos" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="enc_vles_cmbstble" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="enc_fac_nmro" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="enc_vles_rlcion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="enc_vles_cncldo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="enc_vles_qncna" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="enc_vles_entrgdo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="enc_vles_obsrvcnes" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="enc_vles_nmro_intrno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="enc_vles_fctrdo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="enc_vles_pgdo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="enc_vles_prcsdo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="enc_vles_prcsdo_fctra" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="enc_vles_prcsdo_pgdo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="enc_vles_tmpral" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="usrios_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="fcha_prcso" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="mnnto_vhclos">
+    <Key>
+      <PropertyRef Name="consecutivo" />
+    </Key>
+    <Property Name="vhclos_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="cncptos_mnnto_cdgo" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="mnnto_nmro_hras" Type="Decimal" Precision="16" Scale="2" />
+    <Property Name="mnnto_nmro_hras_trbjdas" Type="Decimal" Precision="16" Scale="2" />
+    <Property Name="mnnto_vhclos_fcha_incial" Type="DateTime" Precision="3" />
+    <Property Name="mnnto_vhclos_fcha_fnal" Type="DateTime" Precision="3" />
+    <Property Name="mnnto_obsrvcnes" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="mnnto_actvo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="usrios_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="fcha_prcso" Type="DateTime" Precision="3" />
+    <Property Name="consecutivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="prsnas">
+    <Key>
+      <PropertyRef Name="prsnas_idntfccion" />
+    </Key>
+    <Property Name="prsnas_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cddes_cdgo_expdcion" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="prsnas_prmer_nmbre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="prsnas_sgndo_nmbre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="prsnas_prmer_aplldo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="prsnas_sgndo_aplldo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="prsnas_lgar_ncmnto" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="prsnas_fcha_ncmnto" Type="DateTime" Precision="3" />
+    <Property Name="tpos_sngre_cdgo" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="prsnas_actvo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="prsnas_nmbre_cmplto" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="usrios_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="fcha_prcso" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="cntros">
+    <Key>
+      <PropertyRef Name="cntros_cdgo" />
+    </Key>
+    <Property Name="tpos_dcmnto_cdgo" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="cntros_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="cntros_rzon_scial" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cddes_cdgo" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="cntros_scrsal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cntros_drccion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cntros_tlfno" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="cntros_mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cntros_actvo" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="enc_vles_bck">
+    <Key>
+      <PropertyRef Name="id_vale" />
+      <PropertyRef Name="enc_vles_nmro" />
+      <PropertyRef Name="enc_fac_nmro" />
+      <PropertyRef Name="enc_vles_rlcion" />
+    </Key>
+    <Property Name="id_vale" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="enc_vles_nmro" Type="Int32" Nullable="false" />
+    <Property Name="clntes_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="enc_vles_fcha" Type="DateTime" Precision="3" />
+    <Property Name="enc_vles_hra_entrda" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="enc_vles_hra_slda" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="enc_vles_tmpo_dscnto" Type="Decimal" Precision="4" Scale="2" />
+    <Property Name="enc_vles_tmpo_trbjdo" Type="Decimal" Precision="4" Scale="2" />
+    <Property Name="enc_vles_vlor_trnsprtes" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="enc_vles_vlor_almntos" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="enc_vles_cmbstble" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="enc_fac_nmro" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="enc_vles_rlcion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="enc_vles_cncldo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="enc_vles_qncna" Type="DateTime" Precision="3" />
+    <Property Name="enc_vles_entrgdo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="enc_vles_obsrvcnes" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="enc_vles_nmro_intrno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="enc_vles_fctrdo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="enc_vles_pgdo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="enc_vles_prcsdo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="enc_vles_prcsdo_fctra" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="enc_vles_prcsdo_pgdo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="enc_vles_tmpral" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="usrios_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="fcha_prcso" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="lstas_prcio">
+    <Key>
+      <PropertyRef Name="cnvnios_cdgo" />
+      <PropertyRef Name="srvcios_cdgo" />
+    </Key>
+    <Property Name="cnvnios_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="srvcios_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="lstas_prcio_vlor" Type="Double" />
+    <Property Name="lstas_prcio_iva" Type="Double" />
+    <Property Name="lstas_prcio_prdo" Type="Int32" />
+    <Property Name="lstas_prcio_actvo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="mvmnto_vhclos">
+    <Key>
+      <PropertyRef Name="consecutivo" />
+    </Key>
+    <Property Name="vhclos_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="cncptos_mvmnto_cdgo" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="mvmnto_vhclos_fcha" Type="DateTime" Precision="3" />
+    <Property Name="mvmnto_vhclos_dcmnto" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="mvmnto_vhclos_vlor" Type="Decimal" Precision="16" Scale="2" />
+    <Property Name="mvmnto_vhclos_obsrvcnes" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="usrios_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="fcha_prcso" Type="DateTime" Precision="3" />
+    <Property Name="consecutivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="prfles_usrio">
+    <Key>
+      <PropertyRef Name="prfles_usrio_cdgo" />
+    </Key>
+    <Property Name="prfles_usrio_cdgo" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="prfles_usrio_dscrpcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="prfles_usrio_actvo" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="prsnas_drccnes">
+    <Key>
+      <PropertyRef Name="consecutivo" />
+    </Key>
+    <Property Name="prsnas_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="prsnas_drccnes_drccion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="cddes_cdgo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="prsnas_drccnes_actvo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="prsnas_drccnes_tlfno" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="usrios_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="fcha_prcso" Type="DateTime" Precision="3" />
+    <Property Name="consecutivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="prsnas_eps">
+    <Key>
+      <PropertyRef Name="consecutivo" />
+    </Key>
+    <Property Name="prsnas_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="eps_cdgo" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="fcha_aflcion" Type="DateTime" Precision="3" />
+    <Property Name="usrios_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="fcha_prcso" Type="DateTime" Precision="3" />
+    <Property Name="consecutivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="prsnas_fndos_pnsnes">
+    <Key>
+      <PropertyRef Name="consecutivo" />
+    </Key>
+    <Property Name="prsnas_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="fndos_pnsnes_cdgo" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="fcha_aflcion" Type="DateTime" Precision="3" />
+    <Property Name="usrios_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="fcha_prcso" Type="DateTime" Precision="3" />
+    <Property Name="consecutivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="prsnas_obsrvcnes">
+    <Key>
+      <PropertyRef Name="consecutivo" />
+    </Key>
+    <Property Name="prsnas_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="prsnas_obsrvcnes1" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="fcha_obsrvcion" Type="DateTime" Precision="3" />
+    <Property Name="usrios_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="fcha_prcso" Type="DateTime" Precision="3" />
+    <Property Name="consecutivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="prsnas_tlfnos">
+    <Key>
+      <PropertyRef Name="consecutivo" />
+    </Key>
+    <Property Name="prsnas_idntfccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="prsnas_tlfnos_tlfno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="cddes_cdgo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="prsnas_tlfnos_actvo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="prsnas_tlfnos_obsrvcion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="usrios_cdgo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="fcha_prcso" Type="DateTime" Precision="3" />
+    <Property Name="consecutivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="usrios">
+    <Key>
+      <PropertyRef Name="usrios_cdgo" />
+      <PropertyRef Name="usrios_dscrpcion" />
+      <PropertyRef Name="usrios_clve" />
+      <PropertyRef Name="usrios_actvo" />
+    </Key>
+    <Property Name="usrios_cdgo" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="usrios_dscrpcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="usrios_clve" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="usrios_actvo" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="usrios_admnstrdor" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="usrios_frma_dgtal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="prfles_usrio_cdgo" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="usrios_clves">
+    <Key>
+      <PropertyRef Name="usrios_cdgo" />
+      <PropertyRef Name="usrios_clve" />
+    </Key>
+    <Property Name="usrios_cdgo" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="usrios_clve" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="usrios_fcha_clve" Type="DateTime" Precision="3" />
+    <Property Name="usrios_fcha_prcso" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="AGROSISEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="clntes" EntityType="Self.clntes" />
+    <EntitySet Name="clntes_drccnes" EntityType="Self.clntes_drccnes" />
+    <EntitySet Name="det_vles_drccnes" EntityType="Self.det_vles_drccnes" />
+    <EntitySet Name="det_vles_prsnas" EntityType="Self.det_vles_prsnas" />
+    <EntitySet Name="det_vles_srvcios" EntityType="Self.det_vles_srvcios" />
+    <EntitySet Name="det_vles_vhclos" EntityType="Self.det_vles_vhclos" />
+    <EntitySet Name="enc_vles" EntityType="Self.enc_vles" />
+    <EntitySet Name="mnnto_vhclos" EntityType="Self.mnnto_vhclos" />
+    <EntitySet Name="prsnas" EntityType="Self.prsnas" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="cntros" EntityType="Self.cntros" />
+    <EntitySet Name="enc_vles_bck" EntityType="Self.enc_vles_bck" />
+    <EntitySet Name="lstas_prcio" EntityType="Self.lstas_prcio" />
+    <EntitySet Name="mvmnto_vhclos" EntityType="Self.mvmnto_vhclos" />
+    <EntitySet Name="prfles_usrio" EntityType="Self.prfles_usrio" />
+    <EntitySet Name="prsnas_drccnes" EntityType="Self.prsnas_drccnes" />
+    <EntitySet Name="prsnas_eps" EntityType="Self.prsnas_eps" />
+    <EntitySet Name="prsnas_fndos_pnsnes" EntityType="Self.prsnas_fndos_pnsnes" />
+    <EntitySet Name="prsnas_obsrvcnes" EntityType="Self.prsnas_obsrvcnes" />
+    <EntitySet Name="prsnas_tlfnos" EntityType="Self.prsnas_tlfnos" />
+    <EntitySet Name="usrios" EntityType="Self.usrios" />
+    <EntitySet Name="usrios_clves" EntityType="Self.usrios_clves" />
+  </EntityContainer>
+</Schema>
