@@ -1,7 +1,15 @@
 <table class="table table-hover">
-    <tr *ngFor="let val of service.list">
+    <thead>
+    <tr class="table-primary">
+        <th scope="col">Documento</th>
+        <th scope="col" >Numero de factura</th> 
+        <th scope="col" >Fecha de vale</th>
+      </tr>
+    </thead>
+    <tr *ngFor="let val of service.list  | paginate:{itemsPerPage: 6 , currentPage: page}">
       <td (click)="populateForm(val)">{{val.clntes_idntfccion}}</td>
       <td (click)="populateForm(val)">{{val.enc_fac_nmro}}</td>
       <td (click)="populateForm(val)">{{val.enc_vles_fcha}}</td>
     </tr>
   </table>
+  <pagination-controls (pageChange)="page = $event"></pagination-controls>
