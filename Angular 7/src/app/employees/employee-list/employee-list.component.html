@@ -1,8 +1,14 @@
 <table class="table table-hover">
-  <tr *ngFor="let emp of service.list">
-    <td (click)="populateForm(emp)">[{{emp.EMPCode}}]-{{emp.FullName}}</td>
-    <td (click)="populateForm(emp)">{{emp.Position}}</td>
-    <td (click)="populateForm(emp)">{{emp.Mobile}}</td>
-    <td><button (click)="onDelete(emp.EmployeeID)" class="btn btn-sm btn-outline-danger">X</button></td>
+    <tr>
+        <th>Documento</th>
+        <th>Razón social</th> 
+        <th>Dirección</th>
+      </tr>
+  <tr *ngFor="let emp of service.list | paginate:{itemsPerPage: 6 , currentPage: page}">
+    <td (click)="populateForm(emp)">{{emp.clntes_idntfccion}}-{{emp.tpos_dcmnto_cdgo}}</td>
+    <td (click)="populateForm(emp)">{{emp.clntes_rzon_scial}}</td>
+    <td (click)="populateForm(emp)">{{emp.clntes_drccion}}</td>
+    <td><button (click)="onDelete(emp.clntes_idntfccion)" class="btn btn-sm btn-outline-danger">X</button></td>
   </tr>
 </table>
+<pagination-controls (pageChange)="page = $event"></pagination-controls>

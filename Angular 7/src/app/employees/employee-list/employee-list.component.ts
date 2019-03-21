@@ -12,7 +12,7 @@ export class EmployeeListComponent implements OnInit {
 
   constructor(private service: EmployeeService,
     private toastr: ToastrService) { }
-
+    page : number=1;
   ngOnInit() {
     this.service.refreshList();
   }
@@ -21,7 +21,7 @@ export class EmployeeListComponent implements OnInit {
     this.service.formData = Object.assign({}, emp);
   }
 
-  onDelete(id: number) {
+  onDelete(id: Employee) {
     if (confirm('Are you sure to delete this record?')) {
       this.service.deleteEmployee(id).subscribe(res => {
         this.service.refreshList();

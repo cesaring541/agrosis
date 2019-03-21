@@ -14,21 +14,21 @@ export class EmployeeService {
   constructor(private http : HttpClient) { }
 
   postEmployee(formData : Employee){
-   return this.http.post(this.rootURL+'/Employee',formData);
+   return this.http.post(this.rootURL+'/clntes',formData);
     
   }
 
   refreshList(){
-    this.http.get(this.rootURL+'/Employee')
+    this.http.get(this.rootURL+'/clntes')
     .toPromise().then(res => this.list = res as Employee[]);
   }
 
   putEmployee(formData : Employee){
-    return this.http.put(this.rootURL+'/Employee/'+formData.EmployeeID,formData);
+    return this.http.put(this.rootURL+'/clntes/'+formData.clntes_idntfccion,formData);
      
    }
 
-   deleteEmployee(id : number){
-    return this.http.delete(this.rootURL+'/Employee/'+id);
+   deleteEmployee(formData : Employee){
+    return this.http.delete(this.rootURL+'/clntes/'+formData);
    }
 }

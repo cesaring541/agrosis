@@ -1,26 +1,54 @@
 <form #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
-  <input type="hidden" name="EmployeeID" #EmployeeID="ngModel" [(ngModel)]="service.formData.EmployeeID">
   <div class="form-group">
-    <label>FULL NAME</label>
-    <input name="FullName" #FullName="ngModel" [(ngModel)]="service.formData.FullName" class="form-control" required>
-    <div class="validation-error" *ngIf="FullName.invalid && FullName.touched">This field is required.</div>
+    <label>Type document</label>
+    <input name="tpos_dcmnto_cdgo" #tpos_dcmnto_cdgo="ngModel" [(ngModel)]="service.formData.tpos_dcmnto_cdgo" class="form-control" required>
+    <div class="validation-error" *ngIf="tpos_dcmnto_cdgo.invalid && tpos_dcmnto_cdgo.touched">This field is required.</div>
   </div>
   <div class="form-group">
-    <label>POSITION</label>
-    <input name="Position" #Position="ngModel" [(ngModel)]="service.formData.Position" class="form-control">
+    <label>clntes_idntfccion</label>
+    <input name="clntes_idntfccion" #clntes_idntfccion="ngModel" [(ngModel)]="service.formData.clntes_idntfccion" class="form-control">
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
-      <label>EMP CODE</label>
-      <input name="EMPCode" #EMPCode="ngModel" [(ngModel)]="service.formData.EMPCode" class="form-control">
+      <label>clntes_rzon_scial</label>
+      <input name="clntes_rzon_scial" #clntes_rzon_scial="ngModel" [(ngModel)]="service.formData.clntes_rzon_scial" class="form-control">
     </div>
     <div class="form-group  col-md-6">
-      <label>MOBILE</label>
-      <input name="Mobile" #Mobile="ngModel" [(ngModel)]="service.formData.Mobile" class="form-control">
+      <label>clntes_tlfno</label>
+      <input name="clntes_tlfno" #clntes_tlfno="ngModel" [(ngModel)]="service.formData.clntes_tlfno" class="form-control">
     </div>
     
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>clntes_fax</label>
+      <input name="clntes_fax" #clntes_fax="ngModel" [(ngModel)]="service.formData.clntes_fax" class="form-control">
+    </div>
+    <div class="form-group  col-md-6">
+      <label>clntes_mail</label>
+      <input name="clntes_mail" #clntes_mail="ngModel" [(ngModel)]="service.formData.clntes_mail" class="form-control">
+    </div>
+    
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>cntros_tlfno</label>
+      <input name="cntros_tlfno" #cntros_tlfno="ngModel" [(ngModel)]="service.formData.cntros_tlfno" class="form-control">
+    </div>
+    <div class="form-group  col-md-6">
+      <label>cntros_mail</label>
+      <input name="cntros_mail" #cntros_mail="ngModel" [(ngModel)]="service.formData.cntros_mail" class="form-control">
+    </div>
+    
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>cddes_cdgo</label>
+      <input name="cddes_cdgo" #cddes_cdgo="ngModel" [(ngModel)]="service.formData.cddes_cdgo" class="form-control">
+    </div>
   </div>
   <div class="form-group">
     <button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block">SUBMIT</button>
   </div>
 </form>
+
